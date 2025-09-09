@@ -68,7 +68,7 @@ const HomePageHero = ({ home, children }) => {
               <ul className="flex flex-col items-center py-6 space-y-15">
                 {navLinks.map((nav) => (
                   <li key={nav?.id}>
-                    <a
+                    <Link
                       className={`text-xl font-normal cursor-pointer transition-colors ${
                         active === nav?.id
                           ? "!font-medium text-secondary"
@@ -76,15 +76,15 @@ const HomePageHero = ({ home, children }) => {
                       } 
             `}
                       onClick={() => setActive(nav?.id)}
-                      href={nav?.href}
+                      to={nav?.href}
                     >
                       {nav?.name}
-                    </a>
+                    </Link>
                   </li>
                 ))}
               </ul>
             </div>
-            
+
             <div className="px-6 py-4 m-20 text-xs font-normal text-center text-white rounded-lg cursor-pointer bg-secondary">
               Get Started
             </div>
