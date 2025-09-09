@@ -1,7 +1,6 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Home from "@pages/Home";
 import ScrollToTop from "@components/ScrollRapper";
-
 import React from "react";
 import HomePayment from "@pages/HomePayment";
 import HomeLogistics from "@pages/HomeLogistics";
@@ -11,6 +10,7 @@ import TermsAndCondition from "@pages/TermsAndCondition";
 import Faqs from "@pages/Faqs";
 import Blog from "@pages/Blog";
 import GetBlogById from "@pages/GetBlogById";
+import NotFound from "@features/NotFound";
 
 const AppRoutes = () => {
   return (
@@ -27,7 +27,7 @@ const AppRoutes = () => {
         <Route path="/blog" element={<Blog />} />
         <Route path="/blog/:id" element={<GetBlogById />} />
 
-        {/* <Route path="*" element={<NotFound />} /> */}
+        <Route path="*" element={<NotFound />} />
       </Routes>
     </BrowserRouter>
   );

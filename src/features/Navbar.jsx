@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import { RiMenu5Fill } from "react-icons/ri";
-
 import logo from "@assets/images/procurify_logo.svg";
 import { navLinks } from "../constant";
 import { IoCloseOutline } from "react-icons/io5";
