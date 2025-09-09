@@ -15,7 +15,7 @@ const WhoItsFor = () => {
             <div className="flex flex-col gap-1 p-6 space-y-3" key={who.id}>
               <div className="">
                 <h5 className="font-bold text-3xl md:text-[54px]">
-                  {who.title}{" "}
+                  {who.title}
                    {/* <span className="text-xs font-normal w-10/12">{who.text}</span> */}
                 </h5>
                 <p className="mt-5 text-md font-normal w-10/12">{who.text}</p>

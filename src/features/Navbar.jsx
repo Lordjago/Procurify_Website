@@ -1,25 +1,24 @@
 import React, { useEffect, useState } from "react";
-import { RiDownloadCloudFill, RiMenu5Fill } from "react-icons/ri";
+import { RiMenu5Fill } from "react-icons/ri";
 
 import logo from "@assets/images/procurify_logo.svg";
 import { navLinks } from "../constant";
 import { IoCloseOutline } from "react-icons/io5";
-import Button from "@components/Button";
 import { Link, useLocation } from "react-router-dom";
 import { changeString } from "@utils/changeString";
 const HomePageHero = ({ home, children }) => {
-  const [active, setActive] = useState(1);
+  const [active, setActive] = useState("home");
   const [toggle, setToggle] = useState(false);
 
-  // const location = useLocation();
-  // useEffect(() => {
-  //   const pathname =
-  //     location.pathname === "/" ? "home" : location.pathname.slice(1); //removing / from pathname
-  //   const activeLink = navLinks.find(
-  //     (nav) => changeString(nav.name.toLowerCase()) === pathname
-  //   );
-  //   setActive(activeLink.id);
-  // }, [location]);
+  const location = useLocation();
+  useEffect(() => {
+    const pathname =
+      location.pathname === "/" ? "home" : location.pathname.slice(1);
+    const activeLink = navLinks.find(
+      (nav) => changeString(nav.name.toLowerCase()) === pathname
+    );
+    setActive(activeLink?.id);
+  }, [location]);
 
   return (
     <div
@@ -33,18 +32,18 @@ const HomePageHero = ({ home, children }) => {
         </Link>
         <ul className="hidden md:flex items-center space-x-5 border border-primary-100 rounded-2xl py-1.5 px-4">
           {navLinks.map((nav) => (
-            <li key={nav.id}>
+            <li key={nav?.id}>
               <Link
                 className={`text-sm font-normal cursor-pointer transition-colors ${
-                  active === nav.id
+                  active === nav?.id
                     ? "!font-medium text-secondary"
                     : "font-normal"
                 } 
             `}
-                onClick={() => setActive(nav.id)}
-                to={nav.href}
+                onClick={() => setActive(nav?.id)}
+                to={nav?.href}
               >
-                {nav.name}
+                {nav?.name}
               </Link>
             </li>
           ))}
@@ -68,23 +67,24 @@ const HomePageHero = ({ home, children }) => {
               />
               <ul className="flex flex-col items-center py-6 space-y-15">
                 {navLinks.map((nav) => (
-                  <li key={nav.id}>
+                  <li key={nav?.id}>
                     <a
                       className={`text-xl font-normal cursor-pointer transition-colors ${
-                        active === nav.id
+                        active === nav?.id
                           ? "!font-medium text-secondary"
                           : "font-normal"
                       } 
             `}
-                      onClick={() => setActive(nav.id)}
-                      href={nav.href}
+                      onClick={() => setActive(nav?.id)}
+                      href={nav?.href}
                     >
-                      {nav.name}
+                      {nav?.name}
                     </a>
                   </li>
                 ))}
               </ul>
             </div>
+            
             <div className="px-6 py-4 m-20 text-xs font-normal text-center text-white rounded-lg cursor-pointer bg-secondary">
               Get Started
             </div>
