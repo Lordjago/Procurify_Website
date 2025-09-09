@@ -1,6 +1,7 @@
 import React from "react";
 import { whatYouCando } from "../../constant";
 import Button from "@components/Button";
+import { Link } from "react-router-dom";
 
 const WhatWeDo = () => {
   return (
@@ -26,9 +27,12 @@ const WhatWeDo = () => {
                 <p className="mt-2 text-sm font-normal w-10/12">
                   {feature.text}
                 </p>
-                <div className="mt-6 flex items-center justify-center md:inline-block py-3 px-5 text-xs text-secondary border border-secondary rounded-lg font-normal cursor-pointer">
+                <Link
+                  to={feature.href}
+                  className="mt-6 flex items-center justify-center md:inline-block py-3 px-5 text-xs text-secondary border border-secondary rounded-lg font-normal cursor-pointer"
+                >
                   Learn More
-                </div>
+                </Link>
               </div>
               <div className="md:w-[65%]">
                 <img

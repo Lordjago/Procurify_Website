@@ -31,12 +31,14 @@ export const whatYouCando = [
     title: "Buy RMB, Fast & Secure",
     text: "Top up your wallet or make RMB payments without stress.",
     image: image1,
+    href: "/payment",
   },
   {
     id: 2,
     title: "Ship Locally & Internationally",
     text: "From checkout to doorstep we handle your logistics, effortlessly.",
     image: image2,
+    href: "/logistics",
   },
 ];
 
