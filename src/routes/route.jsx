@@ -7,7 +7,7 @@ import HomePayment from "@pages/HomePayment";
 import HomeLogistics from "@pages/HomeLogistics";
 import About from "@pages/About";
 import Privacy from "@pages/Privacy";
-import TermsAndCondition from "@pages/TermsANDCondition";
+import TermsAndCondition from "@pages/TermsAndCondition";
 import Faqs from "@pages/Faqs";
 import Blog from "@pages/Blog";
 import GetBlogById from "@pages/GetBlogById";

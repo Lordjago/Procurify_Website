@@ -1,5 +1,4 @@
 import React from "react";
-import Download from "@features/OtherHomes/Download";
 import Footer from "@features/Home/Footer";
 import Header from "@features/Privacy & Terms/Header";
 import PageData from "@features/Privacy & Terms/PageData";
