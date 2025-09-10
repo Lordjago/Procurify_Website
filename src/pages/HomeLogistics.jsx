@@ -1,5 +1,4 @@
 import Footer from "@features/Home/Footer";
-import Reviews from "@features/Home/Reviews";
 import Download from "@features/OtherHomes/Download";
 import HomePageHero from "@features/OtherHomes/Hero";
 import KeyFeatures from "@features/OtherHomes/KeyFeatures";
@@ -8,12 +7,14 @@ import WhyChoose from "@features/OtherHomes/WhyChoose";
 import React from "react";
 import heroImage from "@assets/images/logisticsDesktop.png";
 import heroImageMobile from "@assets/images/logisticsMobile.png";
-import { keyFeaturesLogistics } from "../constant";
+import { howItWorksLogistics } from "../constant";
+import { whatWeOffer } from "../constant";
+import Reviews from "@features/OtherHomes/Reviews";
 
 const hero = {
-  heading: ["From Checkout to", "Doorstep, We Deliver"],
+  heading: ["Ship from China", "to Africa, Hassle-Free"],
   subheading:
-    " Our logistics system works hand-in-hand with your shopping and payments. Whether it’s a local delivery or international cargo, we make it seamless.",
+    "Reliable logistics built for African importers. Fast, transparent, and secure.",
   desktopImage: heroImage,
   mobileImage: heroImageMobile,
 };
@@ -28,11 +29,17 @@ const HomeLogistics = () => {
   return (
     <>
       <HomePageHero {...hero} />
-      <KeyFeatures keyFeatures={keyFeaturesLogistics} />
+      <KeyFeatures
+        title={"Seamless Shipping in 3 Steps"}
+        keyFeatures={howItWorksLogistics}
+      />
       <Transparent {...transparent} />
-      <WhyChoose />
-      <Reviews />
-      <Download />
+      <WhyChoose title={"What We Offer"} data={whatWeOffer} />
+      <Reviews title={"Trusted by Businesses Like Yours"} />
+      <Download
+        title={["From China to your door - stress-free.", ""]}
+        text={["Download the app and", "start shipping today."]}
+      />
       <Footer />
     </>
   );

@@ -1,11 +1,15 @@
 import React, { useState } from "react";
 
-const NavOptions = ({ nav, setSelectedNav }) => {
+const NavOptions = ({ nav, setSelectedNav, setShowFaq }) => {
   const [howActive, setHowActive] = useState(1);
 
+  // Provide default empty function if setShowFaq is not provided
+  const safeSetShowFaq = setShowFaq || (() => {});
+  
   const handleToggle = (id) => {
     setHowActive(id);
     setSelectedNav(nav.find((option) => option.id === id));
+    safeSetShowFaq({ show: true, faqId: 1 });
   };
   return (
     <div className="mt-8 lg:mt-4 pb-4 flex items-center flex-wrap space-x-2 border-b border-primary space-y-5">

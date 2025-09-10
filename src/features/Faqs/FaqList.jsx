@@ -1,10 +1,6 @@
-import React, { useState } from "react";
+import React from "react";
 
-const FaqList = ({ faqs }) => {
-  const [showFaq, setShowFaq] = useState({
-    show: true,
-    faqId: 1,
-  });
+const FaqList = ({ showFaq, setShowFaq, faqs }) => {
   return (
     <div className="lg:w-full">
       <div className="flex flex-col space-y-2 mx-auto w-full">

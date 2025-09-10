@@ -9,6 +9,7 @@ import heroImage from "@assets/images/paymentHero.png";
 import heroImageMobile from "@assets/images/paymentHeroMobile.png";
 import { howItWorksPayment } from "../constant";
 import Reviews from "@features/OtherHomes/Reviews";
+import { advantages } from "../constant";
 
 const hero = {
   heading: ["Pay RMB to Your ", "Suppliers In Minutes."],
@@ -28,11 +29,17 @@ const HomePayment = () => {
   return (
     <>
       <HomePageHero {...hero} />
-      <KeyFeatures keyFeatures={howItWorksPayment} />
+      <KeyFeatures
+        title="Here’s How It Works"
+        keyFeatures={howItWorksPayment}
+      />
       <Transparent {...transparent} />
-      <WhyChoose />
-      <Reviews />
-      <Download />
+      <WhyChoose title={"The Procurify Payment Advantage"} data={advantages} />
+      <Reviews title={"Trusted by Businesses Like Yours"} />
+      <Download
+        title={["Ready to pay your suppliers in minutes,", "not in mysteries?"]}
+        text={["Download the app today", " and get started."]}
+      />
       <Footer />
     </>
   );

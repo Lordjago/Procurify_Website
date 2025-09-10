@@ -8,7 +8,6 @@ import NavOptions from "@features/NavOptions";
 
 const HowItWorks = () => {
   const [selectedNav, setSelectedNav] = useState(navOptions[0]);
-  console.log(selectedNav);
   const howItWorks =
     selectedNav.id === 1 ? howItWorksPayment : howItWorksLogistics;
 

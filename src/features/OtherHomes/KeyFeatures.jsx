@@ -1,12 +1,12 @@
 import React from "react";
 
-const KeyFeatures = ({keyFeatures}) => {
+const KeyFeatures = ({keyFeatures, title}) => {
   return (
     <div className="mx-4 md:mx-15 my-25">
       <div>
         <div className="flex items-start md:items-end justify-between">
           <h1 className="text-3xl text-center lg:text-left md:text-4xl w-full font-bold leading-7 md:leading-15">
-            Key Features
+            {title}
           </h1>
           <div className="hidden lg:flex py-2.5 px-5 text-xs text-white bg-secondary rounded-lg font-normal cursor-pointer whitespace-nowrap">
             Get Started Free

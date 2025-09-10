@@ -3,14 +3,14 @@ import { reviews } from "../../constant";
 import React from "react";
 import { IoArrowForward } from "react-icons/io5";
 import { IoArrowBackSharp } from "react-icons/io5";
-const Reviews = () => {
+const Reviews = ({title}) => {
   return (
     <div className="mx-4 md:mx-30 my-15 md:my-25">
       <div>
         <span className="text-xs text-gray-600 border border-[#e3e3e3] py-2 px-4 rounded-xl">Great Reviews</span>
         <div className="flex items-end justify-between mt-2">
           <h1 className="mt-3 text-3xl text-left md:text-5xl w-full font-bold">
-          Trusted by Businesses Like Yours
+          {title}
           </h1>
           <div className="flex items-center space-x-5 mr-10">
             <IoArrowBackSharp color="#c4c4c4" className="w-7 h-14" />

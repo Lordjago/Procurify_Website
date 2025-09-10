@@ -14,7 +14,10 @@ const About = () => {
       <Widget widget={widget} />
       <Team />
       <OurValue />
-      <Download />
+      <Download
+        title={["Join Africa’s trade revolution.", ""]}
+        text={["Grow with us.", "Download the app."]}
+      />
       <Footer />
     </>
   );

@@ -94,11 +94,15 @@ export const navOptions = [
   },
   {
     id: 3,
-    name: "🛍️ Shopping",
+    name: "📲 App Usage",
   },
   {
     id: 4,
-    name: "📲 App Usage",
+    name: "🛍️ Account & Security",
+  },
+  {
+    id: 5,
+    name: "❓ Support",
   },
 ];
 export const faqs = [
@@ -323,6 +327,232 @@ export const advantages = [
     title: "Secure & Reliable",
     description: "Every payment protected with trusted, compliant systems.",
     image: transparent,
+  },
+];
+
+export const whatWeOffer = [
+  {
+    title: "Air Cargo",
+    description:
+      "Reliable shipping for orders—arrives in 5–7 days, with full insurance and easy tracking.",
+    image: transparent,
+  },
+  {
+    title: "Sea Cargo",
+    description:
+      "Affordable bulk shipping—arrives in 35–40 days, with cost-saving consolidation and simple tracking.",
+    image: transparent,
+  },
+  {
+    title: "Full Container Loading (FCL)",
+    description:
+      "Efficient end-to-end management for large shipments, fully insured and dependable.",
+    image: transparent,
+  },
+  {
+    title: "Special Containers",
+    description:
+      "Tailored solutions for refrigerated, oversized, or hazardous cargo with 24/7 support.",
+    image: transparent,
+  },
+  {
+    title: "Your cargo, always in the loop",
+    description: "Ship, track, and relax—Procurify delivers.",
+    image: transparent,
+  },
+];
+
+export const ourValue = [
+  {
+    title: "Empowerment",
+    description:
+      "We give you the tools and support to grow your business and compete globally.",
+  },
+  {
+    title: "Transparency",
+    description:
+      "No hidden surprises—everything is clear, honest, and trustworthy.",
+  },
+  {
+    title: "Efficiency",
+    description:
+      "We streamline every step so your logistics and payments are fast, simple, and reliable.",
+  },
+  {
+    title: "Innovation",
+    description:
+      "We’re always finding smarter ways to make trade easier and help your business grow.",
+  },
+  {
+    title: "Integrity",
+    description:
+      "You can count on us—secure payments, ethical practices, and dependable partnerships.",
+  },
+  {
+    title: "Collaboration",
+    description:
+      "We create a community where businesses like yours and suppliers succeed together.",
+  },
+];
+export const faqsPayment = [
+  {
+    id: 1,
+    question: "How do I pay a supplier?",
+    answer:
+      "In the app, request RMB → enter the RMB amount → add supplier details → pay in your local currency. We convert and pay your supplier in RMB.",
+  },
+  {
+    id: 2,
+    question: "How long do payments take?",
+    answer: "Payments are confirmed in under 5 minutes in normal conditions.",
+  },
+  {
+    id: 3,
+    question: "Which local currencies do you accept?",
+    answer:
+      "We accept major local currencies such as Naira, Cedi, and KES. (More currencies will roll out as we expand.)",
+  },
+  {
+    id: 4,
+    question: "What are your exchange rates and fees?",
+    answer:
+      "We offer competitive, transparent exchange rates with no hidden fees. You'll see the full rate and charges before you confirm a payment.",
+  },
+  {
+    id: 5,
+    question: "Will my supplier know I've paid?",
+    answer:
+      "Yes — suppliers receive confirmation when the RMB lands. You also get instant proof of payment to share.",
+  },
+  {
+    id: 6,
+    question: "Can I get a receipt or report of my payments?",
+    answer:
+      "Yes. Downloadable reports include receipts, exchange rates, and transaction history for expense tracking or investor reference.",
+  },
+  {
+    id: 7,
+    question: "My payment failed — what do I do?",
+    answer:
+      "Open a support ticket in the app and attach the payment reference. We'll investigate immediately and guide you through reversal or retry options.",
+  },
+];
+
+export const faqsLogistics = [
+  {
+    id: 1,
+    question: "Which routes do you ship to?",
+    answer:
+      "Our MVP covers shipments from China to Nigeria (with expansion to other African markets planned).",
+  },
+  {
+    id: 2,
+    question: "What are the delivery times?",
+    answer: "Typical timings: Air: 3–7 days. Sea/Consolidation: 35–40 days.",
+  },
+  {
+    id: 3,
+    question: "Do you provide customs clearance?",
+    answer:
+      "Yes — we handle customs documentation and clearance so your goods move smoothly. However, local taxes remain the importer's responsibility.",
+  },
+  {
+    id: 4,
+    question: "Is my cargo insured?",
+    answer:
+      "Yes. We offer cargo insurance with 100% reimbursement in the event of loss (terms and conditions apply).",
+  },
+  {
+    id: 5,
+    question: "Can you consolidate multiple orders?",
+    answer:
+      "Yes. Consolidation bundles several small orders into one shipment to save on costs and simplify handling.",
+  },
+  {
+    id: 6,
+    question: "How do I track my shipment?",
+    answer:
+      "Real-time tracking is available in-app, by email, and SMS — full visibility from pickup to delivery.",
+  },
+  {
+    id: 7,
+    question: "My shipment is missing or damaged — how do I claim?",
+    answer:
+      "Report the issue via the app, include photos and shipment ID. We'll start an investigation and assist with the claiming and next steps.",
+  },
+];
+
+export const faqsAppUsage = [
+  {
+    id: 1,
+    question: "How do I create an account?",
+    answer:
+      "Download the app, tap Sign up, enter your business details, verify your phone/email, and you're ready to go.",
+  },
+  {
+    id: 2,
+    question: "Where do I find my receipts and reports?",
+    answer:
+      "Under Reports in the app you can download payment receipts, exchange histories, and shipment logs as exportable files.",
+  },
+  {
+    id: 3,
+    question: "What if something goes wrong in the app?",
+    answer:
+      "Use Support in the app to chat, email, or call. Our team is available 24/7 to resolve issues quickly.",
+  },
+];
+
+export const faqsSecurity = [
+  {
+    id: 1,
+    question: "How secure is my account?",
+    answer:
+      "Very secure. We use bank-grade encryption and compliance-backed transfer systems to protect payments and data.",
+  },
+  {
+    id: 2,
+    question: "How do refunds or failed payments work?",
+    answer:
+      "If a payment fails, we notify you immediately and follow our reversal/refund process. Contact support for case-specific help.",
+  },
+  {
+    id: 3,
+    question: "How do I reach support?",
+    answer:
+      "Support is available 24/7 via the app (chat), email, and phone. For urgent payment or shipment issues, use the app’s emergency contact.",
+  },
+];
+
+export const faqsSupport = [
+  {
+    id: 1,
+    question: "Is support available 24/7?",
+    answer:
+      "Yes. Our support team is available around the clock. For urgent payment or shipment issues, use the app's emergency contact so your case is prioritized.",
+  },
+  {
+    id: 2,
+    question: "What information should I include when I open a ticket?",
+    answer:
+      "Include your order or transaction ID, supplier name, screenshots (if any), and a brief description of the issue. That helps us resolve things faster.",
+  },
+  {
+    id: 3,
+    question: "How long will it take to get a response?",
+    answer: "We respond as quickly as possible and prioritize urgent cases.",
+  },
+  {
+    id: 4,
+    question: "Do you offer dedicated support for large customers?",
+    answer:
+      "Enterprise customers may receive a dedicated account manager or priority support—contact us via WhatsApp or call to discuss options.",
+  },
+  {
+    id: 5,
+    question: "How can I give feedback or request a feature?",
+    answer:
+      "Submit feedback through the app's Feedback section or contact support—we collect requests and prioritize features that help our users most.",
   },
 ];
 
