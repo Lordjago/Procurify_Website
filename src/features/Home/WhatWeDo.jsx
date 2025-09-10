@@ -9,7 +9,7 @@ const WhatWeDo = () => {
       <div>
         <div className="flex items-end justify-between">
           <h1 className="text-2xl md:text-5xl w-full font-bold leading-8 md:leading-15 ">
-            What You Can <br /> Do With Procurify
+           How Procurify <br /> Works For You
           </h1>
           <Button
             label={"Get Started Free"}

@@ -9,11 +9,11 @@ const Download = () => {
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-4 mx-3 md:mx-10">
         <div className="mt-8 md:mt-12 text-center md:text-left">
           <h1 className="font-bold text-3xl md:text-4xl animate-fadeIn text-center md:text-left">
-            Ready to simplify your shopping & logistics?
+            Your importation, made simple.
           </h1>
           <h4 className="text-lg md:text-[20px] font-bold mt-6">
-            Download the app today <br />
-            and get started.
+           Pay and ship in one app <br />
+            start today.
           </h4>
           <div className="mt-10 mb-2 flex flex-col items-center md:flex-row text-center space-x-4 space-y-6 gap-4">
             <Button label={"Download the iOS"} btnIcon={RiDownloadCloudFill} style={"font-medium"} className={"border-0 m-0 flex items-center space-x-2 py-3 px-5 bg-secondary rounded-lg text-sm text-white cursor-pointer"} />

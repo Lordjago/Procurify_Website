@@ -10,7 +10,7 @@ const Reviews = () => {
         <span className="text-xs text-gray-600 border border-[#e3e3e3] py-2 px-4 rounded-xl">Great Reviews</span>
         <div className="flex items-end justify-between mt-2">
           <h1 className="mt-3 text-3xl text-left md:text-5xl w-full font-bold">
-           What people are saying
+          Why Importers Trust Us
           </h1>
           <div className="flex items-center space-x-5 mr-10">
             <IoArrowBackSharp color="#c4c4c4" className="w-7 h-14" />

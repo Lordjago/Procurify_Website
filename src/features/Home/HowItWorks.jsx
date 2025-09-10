@@ -1,20 +1,32 @@
-import React from "react";
-import { howItWorks, navOptions } from "../../constant";
+import React, { useState } from "react";
+import {
+  howItWorksPayment,
+  howItWorksLogistics,
+  navOptions,
+} from "../../constant";
 import NavOptions from "@features/NavOptions";
 
 const HowItWorks = () => {
+  const [selectedNav, setSelectedNav] = useState(navOptions[0]);
+  console.log(selectedNav);
+  const howItWorks =
+    selectedNav.id === 1 ? howItWorksPayment : howItWorksLogistics;
+
   return (
     <div className="mx-4 md:mx-15 my-25">
       <div>
         <div className="flex items-start md:items-end justify-between">
           <h1 className="text-3xl text-center lg:text-left md:text-4xl w-full font-bold leading-7 md:leading-15">
-            How It Works
+            Trade Simplified - In 3 Clicks
           </h1>
           <div className="hidden lg:flex py-2.5 px-5 text-xs text-white bg-secondary rounded-lg font-normal cursor-pointer whitespace-nowrap">
             Get Started Free
           </div>
         </div>
-        <NavOptions nav={navOptions.slice(0,2)} />
+        <NavOptions
+          nav={navOptions.slice(0, 2)}
+          setSelectedNav={setSelectedNav}
+        />
         <div className="mt-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {howItWorks.map((item) => (
             <div

@@ -28,41 +28,61 @@ export const navLinks = [
 export const whatYouCando = [
   {
     id: 1,
-    title: "Buy RMB, Fast & Secure",
-    text: "Top up your wallet or make RMB payments without stress.",
+    title: "Local Currency Payments",
+    text: "Pay your suppliers directly in your local currency — fast, secure, and without hidden fees.",
     image: image1,
     href: "/payment",
   },
   {
     id: 2,
-    title: "Ship Locally & Internationally",
-    text: "From checkout to doorstep we handle your logistics, effortlessly.",
+    title: "Logistics Management",
+    text: "Ship from China to Nigeria with confidence: reliable timelines, transparent tracking, and no surprise costs.",
     image: image2,
     href: "/logistics",
   },
 ];
 
-export const howItWorks = [
+export const howItWorksPayment = [
   {
     id: 1,
-    title: "Request RMB",
-    text: "Shop for items and initiate RMB payment requests right from the app.",
+    title: "Input RMB Amount",
+    text: "Input how much you want to pay.",
     image: how1,
   },
   {
     id: 2,
-    title: "Choose Logistics",
-    text: "Let us handle delivery — local or international — or arrange your pickup.",
+    title: "Add Supplier Details",
+    text: "Submit your supplier account information.",
     image: how2,
   },
   {
     id: 3,
-    title: "Track and Receive",
-    text: "Track every item, every step. Stay informed till your order arrives.",
+    title: "Pay in Local Currency",
+    text: "We convert and pay your supplier instantly and securely.",
     image: how3,
   },
 ];
 
+export const howItWorksLogistics = [
+  {
+    id: 1,
+    title: " Book Shipment",
+    text: "Enter your cargo details.",
+    image: how1,
+  },
+  {
+    id: 2,
+    title: "Choose Method",
+    text: "Air, sea, or consolidated cargo—your call.",
+    image: how2,
+  },
+  {
+    id: 3,
+    title: "Confirm & Track",
+    text: "Relax while we handle the rest from China until it reaches your door.",
+    image: how3,
+  },
+];
 export const navOptions = [
   {
     id: 1,
@@ -111,19 +131,52 @@ export const faqs = [
 export const whoItFor = [
   {
     id: 1,
-    title: "For Everyday Shoppers",
-    text: "Easily buy goods from trusted merchants, without hidden stress.",
+    title: "SME Importers",
+    text: "Save money, simplify processes, and import with confidence.",
     image: whoitfor1,
   },
   {
     id: 2,
-    title: "For International Buyers",
-    text: "Need RMB to pay your Chinese supplier? We’ve got you covered.",
+    title: "Corporate Importers",
+    text: "Gain speed, transparency, and full control to scale globally.",
     image: whoitfor2,
   },
 ];
 
-export const whyChoose = ["Funds Security", "Fast Delivery", "Instant Pickup"];
+export const whyChoose = [
+  {
+    question: "Payment timing",
+    answer: "In 5 minutes.",
+  },
+  {
+    question: "Shipment tracking",
+    answer: "Always.",
+  },
+  {
+    question: "Insurance and customs clearance included",
+    answer: "Absolutely.",
+  },
+  {
+    question: "Payment security",
+    answer: "Our priority.",
+  },
+  {
+    question: "Goods Consolidation",
+    answer: "Definitely!",
+  },
+  {
+    question: "Hidden fees",
+    answer: "Never.",
+  },
+  {
+    question: "After-service support",
+    answer: "That’s us.",
+  },
+  {
+    question: "Built for African trade",
+    answer: "100%.",
+  },
+];
 
 export const reviews = [
   {

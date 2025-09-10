@@ -10,7 +10,7 @@ const WhyChoose = () => {
     const interval = setInterval(() => {
       setCurrentIndex((prevIndex) => (prevIndex + 1) % whyChoose.length);
       setWhy(whyChoose[currentIndex]);
-    }, 1500);
+    }, 2000);
 
     return () => clearInterval(interval); // Cleanup on unmount
   }, [currentIndex]); // Re-run effect when currentIndex changes
@@ -22,7 +22,7 @@ const WhyChoose = () => {
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-4 mx-3 md:mx-10">
         <div className="mt-4 md:mt-12">
           <h1 className="font-bold text-3xl md:text-5xl text-[#9f9c9c] animate-fadeIn">
-            {why}? <span className="text-black">Yes!</span>
+            {why.question}? <span className="text-black">{why.answer}</span>
           </h1>
         </div>
         <div className="mx-2 md:mx-10 rounded-2xl flex items-center justify-center bg-gradient-to-t from-[#d2d2ee] via-[#d2d2ee] to-white">

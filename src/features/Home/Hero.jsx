@@ -9,11 +9,11 @@ const Hero = () => {
     <Navbar home={true}>
       <div className="flex flex-col items-center mx-4 md:mx-15 mt-15">
         <h1 className="text-3xl md:text-6xl text-center font-bold leading-10 md:leading-18 mb-4 font-['Inter']">
-          One Platform. <br /> Endless Possibilities.
+          The Trusted Bridge <br /> for African Importers
         </h1>
         <p className="text-center text-[14px] md:text-lg p-2">
-          Whether you're buying goods, paying suppliers in RMB, <br /> or moving
-          products with reliable logistics — we’ve got you covered.
+          Pay in your currency. Ship with ease. Procurify makes importation <br />{" "}
+           simple, reliable, and built for your business.
         </p>
         <div className="flex flex-col gap-4 mb-2 space-x-4 space-y-4 text-center mt-7 md:flex-row">
           <div className="flex items-center px-5 py-3 m-0 space-x-2 text-sm text-white rounded-lg cursor-pointer bg-secondary">
