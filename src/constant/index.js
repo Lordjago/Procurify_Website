@@ -291,6 +291,41 @@ export const paymentWhyChoose = [
   },
 ];
 
+export const advantages = [
+  {
+    title: "Local Simplicity",
+    description: "Pay in Naira, Cedi, or KES. We handle the RMB—zero hassle.",
+    image: transparent,
+  },
+  {
+    title: "Fast Transactions",
+    description:
+      "Instant proof of payment builds supplier trust and speeds delivery.",
+    image: transparent,
+  },
+  {
+    title: "Transparent Rates",
+    description: "Competitive exchange rates with no surprise deductions.",
+    image: transparent,
+  },
+  {
+    title: "Smart Reports",
+    description:
+      "Export your payment history to track, plan, and share with investors.",
+    image: transparent,
+  },
+  {
+    title: "24/7 Support",
+    description: "Real people, ready whenever you need help.",
+    image: transparent,
+  },
+  {
+    title: "Secure & Reliable",
+    description: "Every payment protected with trusted, compliant systems.",
+    image: transparent,
+  },
+];
+
 export const widget = [
   {
     id: 1,

@@ -12,8 +12,8 @@ const Hero = () => {
           The Trusted Bridge <br /> for African Importers
         </h1>
         <p className="text-center text-[14px] md:text-lg p-2">
-          Pay in your currency. Ship with ease. Procurify makes importation <br />{" "}
-           simple, reliable, and built for your business.
+          Pay in your currency. Ship with ease. Procurify makes<br />{" "}
+            importation simple, reliable, and built for your business.
         </p>
         <div className="flex flex-col gap-4 mb-2 space-x-4 space-y-4 text-center mt-7 md:flex-row">
           <div className="flex items-center px-5 py-3 m-0 space-x-2 text-sm text-white rounded-lg cursor-pointer bg-secondary">
