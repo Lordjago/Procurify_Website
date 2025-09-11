@@ -14,7 +14,7 @@ export const getAppStoreLink = (os) => {
   const links = {
     ios: 'https://apps.apple.com/your-app-link',
     android: 'https://play.google.com/your-app-link',
-    other: '/download-options' // Page with both options
+    other: '/download-options' 
   };
   return links[os] || links.other;
 };

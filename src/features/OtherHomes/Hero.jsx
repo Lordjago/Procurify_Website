@@ -1,7 +1,21 @@
 import React from "react";
 import { RiDownloadCloudFill, RiMenu5Fill } from "react-icons/ri";
 import Navbar from "@features/Navbar";
+import { detectOS, getAppStoreLink } from "@utils/detectOs";
 const HomePageHero = ({ heading, subheading, desktopImage, mobileImage }) => {
+  const handleDownload = () => {
+    const os = detectOS();
+
+    if (os === "other") {
+      const downloadSection = document.getElementById("download-options");
+      if (downloadSection) {
+        downloadSection.scrollIntoView({ behavior: "smooth" });
+      }
+    } else {
+      const link = getAppStoreLink(os);
+      window.open(link, "_blank");
+    }
+  };
   return (
     <Navbar>
       <div className="grid grid-cols-1 gap-8 mt-3 lg:grid-cols-2 md:mt-15">
@@ -14,7 +28,10 @@ const HomePageHero = ({ heading, subheading, desktopImage, mobileImage }) => {
             {subheading}
           </p>
           <div className="flex flex-row justify-center gap-4 mb-2 space-x-4 space-y-4 text-center mt-7 md:justify-start">
-            <div className="flex items-center px-5 py-3 m-0 space-x-2 text-sm text-white rounded-lg cursor-pointer bg-secondary">
+            <div
+              className="flex items-center px-5 py-3 m-0 space-x-2 text-sm text-white rounded-lg cursor-pointer bg-secondary"
+              onClick={handleDownload}
+            >
               <RiDownloadCloudFill color="#fff" className="w-5 h-5" />
               <p className="font-medium">Get the App</p>
             </div>

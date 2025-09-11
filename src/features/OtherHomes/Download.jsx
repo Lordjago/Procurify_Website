@@ -4,7 +4,7 @@ import Button from "@components/Button";
 
 const Download = ({title, text}) => {
   return (
-    <div className="mx-4 my-20 md:mx-15 bg-[#fafafa]">
+    <div className="mx-4 my-20 md:mx-15 bg-[#fafafa]"  id="download-options">
       <div className="grid grid-cols-1 items-center gap-8 mx-3 md:grid-cols-2 md:gap-4 md:mx-10">
         <div className="mt-8 text-center md:mt-12 md:text-left">
           <h1 className="text-3xl font-bold text-center md:text-[48px] animate-fadeIn md:text-left">

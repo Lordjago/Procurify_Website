@@ -3,8 +3,22 @@ import heroImage from "@assets/images/hh.png";
 import heroImageMobile from "@assets/images/hero-mobile.png";
 import Navbar from "../Navbar";
 import { RiDownloadCloudFill } from "react-icons/ri";
+import { detectOS, getAppStoreLink } from "@utils/detectOs";
 
 const Hero = () => {
+  const handleDownload = () => {
+    const os = detectOS();
+    
+    if (os === "other") {
+      const downloadSection = document.getElementById("download-options");
+      if (downloadSection) {
+        downloadSection.scrollIntoView({ behavior: "smooth" });
+      }
+    } else {
+      const link = getAppStoreLink(os);
+      window.open(link, "_blank");
+    }
+  };
   return (
     <Navbar home={true}>
       <div className="flex flex-col items-center mx-4 md:mx-15 mt-15">
@@ -12,11 +26,14 @@ const Hero = () => {
           The Trusted Bridge <br /> for African Importers
         </h1>
         <p className="text-center text-[14px] md:text-lg p-2">
-          Pay in your currency. Ship with ease. Procurify makes<br />{" "}
-            importation simple, reliable, and built for your business.
+          Pay in your currency. Ship with ease. Procurify makes
+          <br /> importation simple, reliable, and built for your business.
         </p>
         <div className="flex flex-col gap-4 mb-2 space-x-4 space-y-4 text-center mt-7 md:flex-row">
-          <div className="flex items-center px-5 py-3 m-0 space-x-2 text-sm text-white rounded-lg cursor-pointer bg-secondary">
+          <div
+            className="flex items-center px-5 py-3 m-0 space-x-2 text-sm text-white rounded-lg cursor-pointer bg-secondary"
+            onClick={handleDownload}
+          >
             <RiDownloadCloudFill color="#fff" className="w-5 h-5" />
             <p className="font-medium">Download the App</p>
           </div>
