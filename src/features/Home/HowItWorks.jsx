@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import {
   howItWorksPayment,
   howItWorksLogistics,
@@ -11,13 +11,38 @@ const HowItWorks = () => {
   const howItWorks =
     selectedNav.id === 1 ? howItWorksPayment : howItWorksLogistics;
 
+  const [screenSize, setScreenSize] = useState({
+    width: typeof window !== "undefined" ? window.innerWidth : 0,
+    height: typeof window !== "undefined" ? window.innerHeight : 0,
+  });
+
+  useEffect(() => {
+    if (typeof window === "undefined") return;
+
+    const handleResize = () => {
+      setScreenSize({
+        width: window.innerWidth,
+        height: window.innerHeight,
+      });
+    };
+
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
   return (
     <div className="mx-4 md:mx-15 my-25">
       <div>
         <div className="flex items-start md:items-end justify-between">
-          <h1 className="text-3xl text-center lg:text-left md:text-4xl w-full font-bold leading-7 md:leading-15">
-            Trade Simplified - In 3 Clicks
-          </h1>
+          {screenSize.width < 600 ? (
+            <h1 className="text-3xl text-center lg:text-left md:text-4xl w-full font-bold leading-10 md:leading-15">
+              Trade Simplified <br /> In 3 Clicks
+            </h1>
+          ) : (
+            <h1 className="text-3xl text-center lg:text-left md:text-4xl w-full font-bold leading-10 md:leading-15">
+              Trade Simplified - In 3 Clicks
+            </h1>
+          )}
           <div className="hidden lg:flex py-2.5 px-5 text-xs text-white bg-secondary rounded-lg font-normal cursor-pointer whitespace-nowrap">
             Get Started Free
           </div>

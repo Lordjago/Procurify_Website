@@ -4,8 +4,8 @@ import image from "@assets/images/transparent.png";
 const Transparent = ({bgColor, heading, subheading}) => {
   return (
     <div className="mx-4 md:mx-5 mt-25">
-      <div className={`grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-4 mx-3 md:mx-10 py-5 items-center rounded-2xl px-10`} style={{ backgroundColor: bgColor }}>
-        <div className="mt-8 md:mt-12 text-left">
+      <div className={`grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-4 mx-3 md:mx-10 py-5 items-center rounded-2xl px-2`} style={{ backgroundColor: bgColor }}>
+        <div className=" md:mt-12 text-left px-4">
           <h1 className="font-bold text-3xl md:text-5xl animate-fadeIn text-left leading-10 md:leading-15">
             {heading[0]} <br /> {heading[1]}
           </h1>

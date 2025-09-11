@@ -21,6 +21,8 @@ const BlogPostCards = ({ location }) => {
           <p className="font-bold text-sm">Marketing</p>
           <p className="font-bold">|</p>
           <p className="text-sm">July 28, 2025</p>
+          <p className="font-bold">|</p>
+          <p className="text-sm">2 hrs</p>
         </div>
         <h1 className="font-bold text-lg md:text-2xl">
           10 SMS campaign templates that drives sales and boost conversions.
@@ -30,9 +32,12 @@ const BlogPostCards = ({ location }) => {
           get started - such as promotional offers, exclusive deals, and
           abandoned cart reminders.
         </p>
-        <button className="w-auto text-sm cursor-pointer py-1 px-4 border border-gray-800 rounded-xl">
-          Cancel
+        <div className="flex justify-between items-center mt-5">
+          <div></div>
+          <button className="w-auto text-sm cursor-pointer py-2 px-4 border border-gray-800 rounded-lg ">
+          Read More
         </button>
+        </div>
       </div>
     </Link>
   );

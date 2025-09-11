@@ -10,12 +10,12 @@ const OurValue = () => {
           <h1 className="w-full mt-3 text-3xl font-bold text-center md:text-5xl">
             What defines us
           </h1>
-          <p className="w-11/12 mt-4 text-sm text-center md:text-xl">
+          {/* <p className="w-11/12 mt-4 text-sm text-center md:text-xl">
             Our values define the Procurify culture, who we are, and what we do
             every day. They are the foundation of our identity and the compass
             of our interaction with all stakeholders: customers, regulators,
             investors, partners and our communities.
-          </p>
+          </p> */}
         </div>
         <div className="grid grid-cols-1 gap-10 mt-10 md:grid-cols-2">
           {ourValue.map((value, i) => (

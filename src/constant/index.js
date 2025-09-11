@@ -29,7 +29,7 @@ export const whatYouCando = [
   {
     id: 1,
     title: "Local Currency Payments",
-    text: "Pay your suppliers directly in your local currency — fast, secure, and without hidden fees.",
+    text: "Pay your suppliers directly in your local currency. Fast, secure, and without hidden fees.",
     image: image1,
     href: "/payment",
   },
@@ -201,6 +201,42 @@ export const reviews = [
     rating: 3.5,
     image: review2,
   },
+  {
+    id: 3,
+    name: "Chinwe Okonkwo",
+    position: "Logistics Manager, TradeWorks Ltd",
+    review:
+      "The real-time tracking and customs clearance support have reduced our shipping delays by 40%. Procurify has transformed our supply chain operations.",
+    rating: 4.5,
+    image: review1,
+  },
+  {
+    id: 4,
+    name: "Fatima Ndiaye",
+    position: "E-commerce Business Owner",
+    review:
+      "Package consolidation has cut my shipping costs in half. The transparency and 24/7 support make international trade accessible for small businesses like mine.",
+    rating: 4.0,
+    image: review2,
+  },
+  {
+    id: 5,
+    name: "Kwame Adetola",
+    position: "Import Director, RetailChain NG",
+    review:
+      "The competitive exchange rates and secure payment system have saved us thousands in transaction fees. Procurify is a game-changer for African businesses trading with China.",
+    rating: 5.0,
+    image: review1,
+  },
+  {
+    id: 6,
+    name: "Amina Mohamed",
+    position: "Supply Chain Consultant",
+    review:
+      "The detailed logistics reports and cargo insurance give me peace of mind. I've recommended Procurify to all my clients looking for reliable China-Africa trade solutions.",
+    rating: 4.5,
+    image: review2,
+  },
 ];
 
 export const socialLinks = [
@@ -358,6 +394,61 @@ export const whatWeOffer = [
   {
     title: "Your cargo, always in the loop",
     description: "Ship, track, and relax—Procurify delivers.",
+    image: transparent,
+  },
+];
+
+export const buildForGrowth = [
+  {
+    id: 1,
+    title: "All-in-One Logistics",
+    description:
+      "Freight, clearance, insurance, and delivery—everything handled in one platform.",
+    image: transparent,
+  },
+  {
+    id: 2,
+    title: "24/7 Support",
+    description: "Dedicated human support whenever you need it.",
+    image: transparent,
+  },
+  {
+    id: 3,
+    title: "Cargo Insurance",
+    description: "Full coverage with 100% reimbursement in case of loss.",
+    image: transparent,
+  },
+  {
+    id: 4,
+    title: "Logistics Reports",
+    description: "Export-ready reports for smarter planning and compliance.",
+    image: transparent,
+  },
+  {
+    id: 5,
+    title: "Competitive Rates",
+    description:
+      "The best rates in the market—transparent, with zero hidden fees.",
+    image: transparent,
+  },
+  {
+    id: 6,
+    title: "Package Consolidation",
+    description: "Combine multiple orders into one cost-efficient shipment.",
+    image: transparent,
+  },
+  {
+    id: 7,
+    title: "Smart Tracking",
+    description:
+      "Track your shipment in-app, by email, or SMS—real-time visibility every step of the way.",
+    image: transparent,
+  },
+  {
+    id: 8,
+    title: "Fast & Reliable",
+    description:
+      "Optimized routes and trusted partners ensure your supply chain never slows down.",
     image: transparent,
   },
 ];

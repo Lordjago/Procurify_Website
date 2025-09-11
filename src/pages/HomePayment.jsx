@@ -30,7 +30,7 @@ const HomePayment = () => {
     <>
       <HomePageHero {...hero} />
       <KeyFeatures
-        title="Here’s How It Works"
+        title={["Here’s How It Works", ""]}
         keyFeatures={howItWorksPayment}
       />
       <Transparent {...transparent} />

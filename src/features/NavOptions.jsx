@@ -12,7 +12,7 @@ const NavOptions = ({ nav, setSelectedNav, setShowFaq }) => {
     safeSetShowFaq({ show: true, faqId: 1 });
   };
   return (
-    <div className="mt-8 lg:mt-4 pb-4 flex items-center flex-wrap space-x-2 border-b border-primary space-y-5">
+    <div className="mt-8 lg:mt-4 pb-4 flex items-center flex-wrap space-x-2 border-b border-primary gap-1">
       {nav.map((option) => (
         <div
           className={`m-0 py-1.5 px-4 text-md cursor-pointer transition-colors ${

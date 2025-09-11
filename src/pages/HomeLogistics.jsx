@@ -7,8 +7,7 @@ import WhyChoose from "@features/OtherHomes/WhyChoose";
 import React from "react";
 import heroImage from "@assets/images/logisticsDesktop.png";
 import heroImageMobile from "@assets/images/logisticsMobile.png";
-import { howItWorksLogistics } from "../constant";
-import { whatWeOffer } from "../constant";
+import { buildForGrowth, howItWorksLogistics } from "../constant";
 import Reviews from "@features/OtherHomes/Reviews";
 
 const hero = {
@@ -30,14 +29,14 @@ const HomeLogistics = () => {
     <>
       <HomePageHero {...hero} />
       <KeyFeatures
-        title={"Seamless Shipping in 3 Steps"}
+        title={["Seamless Shipping", " in 3 Steps"]}
         keyFeatures={howItWorksLogistics}
       />
       <Transparent {...transparent} />
-      <WhyChoose title={"What We Offer"} data={whatWeOffer} />
+      <WhyChoose title={"Built for Your Growth"} data={buildForGrowth} />
       <Reviews title={"Trusted by Businesses Like Yours"} />
       <Download
-        title={["From China to your door - stress-free.", ""]}
+        title={["From China to your door stress-free.", ""]}
         text={["Download the app and", "start shipping today."]}
       />
       <Footer />

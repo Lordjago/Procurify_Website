@@ -8,7 +8,7 @@ const Hero = () => {
             <h1 className="text-[26px] font-bold md:text-6xl">
               Insights to Power Your Trade
             </h1>
-            <p className="text-sm w-1/2 md:w-full md:text-[16px] mt-4">Explore tips, stories, and strategies to simplify importation, grow your business, and thrive in global trade.</p>
+            <p className="text-sm w-full md:w-1/2 md:text-[16px] mt-4">Explore tips, stories, and strategies to simplify importation, grow your business, and thrive in global trade.</p>
           </div>
         </div>
     <div>

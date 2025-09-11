@@ -18,7 +18,7 @@ const Reviews = ({title}) => {
           </div>
         </div>
         <div className="mt-8 grid grid-cols-1 md:grid-cols-2 gap-5">
-          {reviews.map(review => (
+          {reviews.slice(0,2).map(review => (
             <div key={review.id} className="p-4 md:p-8 bg-[#F8F8F8] rounded-2xl">
               <p className="text-sm text-[#b7b7b7]">{review.review}</p>
               <div className="mt-6 flex items-center justify-between">
