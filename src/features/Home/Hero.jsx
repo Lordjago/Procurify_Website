@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import heroImage from "@assets/images/hh.png";
 import heroImageMobile from "@assets/images/hero-mobile.png";
 import Navbar from "../Navbar";
@@ -8,7 +8,7 @@ import { detectOS, getAppStoreLink } from "@utils/detectOs";
 const Hero = () => {
   const handleDownload = () => {
     const os = detectOS();
-    
+
     if (os === "other") {
       const downloadSection = document.getElementById("download-options");
       if (downloadSection) {
@@ -19,6 +19,13 @@ const Hero = () => {
       window.open(link, "_blank");
     }
   };
+
+  useEffect(() => {
+    const userAgent = navigator.userAgent || navigator.vendor || window.opera;
+    console.log("User Agent:", userAgent);
+    const os = detectOS();
+    console.log("Detected OS:", os);
+  }, []);
   return (
     <Navbar home={true}>
       <div className="flex flex-col items-center mx-4 md:mx-15 mt-15">

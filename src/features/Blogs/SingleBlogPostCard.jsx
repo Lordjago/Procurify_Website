@@ -25,9 +25,7 @@ const SingleBlogPostCard = () => {
           alt="blogImage"
           className="w-full object-cover rounded-lg"
         />
-        <button className="mt-4 w-auto text-sm cursor-pointer py-1 px-4 border border-gray-800 rounded-xl">
-          Cancel
-        </button>
+     
         <p className="text-sm">
           SMS marketing is an old but effective way for both big and small
           businesses to promote their products and services. You can use SMS

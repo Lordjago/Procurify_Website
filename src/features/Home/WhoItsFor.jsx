@@ -10,7 +10,7 @@ const WhoItsFor = () => {
             Who We Serve
           </h1>
         </div>
-        <div className="mt-10 grid grid-cols-1 lg:grid-cols-2 gap-4 space-y-3">
+        <div className="mt-7 grid grid-cols-1 lg:grid-cols-2 gap-4 space-y-3">
           {whoItFor.map((who) => (
             <div className="flex flex-col gap-1 p-6 space-y-3 bg-[#fafafa]" key={who.id}>
               <div className="">
@@ -24,7 +24,7 @@ const WhoItsFor = () => {
                 <img
                   src={who.image}
                   alt={who.title}
-                  className="w-full h-[360px] object-cover rounded-2xl"
+                  className="w-full h-[190px] md:h-[360px] object-cover rounded-lg md:rounded-2xl"
                 />
               </div>
             </div>
