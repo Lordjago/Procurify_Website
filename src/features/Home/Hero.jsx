@@ -1,9 +1,10 @@
-import React, { useEffect } from "react";
+import React from "react";
 import heroImage from "@assets/images/hh.png";
 import heroImageMobile from "@assets/images/hero-mobile.png";
 import Navbar from "../Navbar";
-import { RiDownloadCloudFill } from "react-icons/ri";
 import { detectOS, getAppStoreLink } from "@utils/detectOs";
+import { FaApple } from "react-icons/fa6";
+import { IoLogoGooglePlaystore } from "react-icons/io5";
 
 const Hero = () => {
   const handleDownload = () => {
@@ -20,12 +21,6 @@ const Hero = () => {
     }
   };
 
-  useEffect(() => {
-    const userAgent = navigator.userAgent || navigator.vendor || window.opera;
-    console.log("User Agent:", userAgent);
-    const os = detectOS();
-    console.log("Detected OS:", os);
-  }, []);
   return (
     <Navbar home={true}>
       <div className="flex flex-col items-center mx-4 md:mx-15 mt-15">
@@ -41,8 +36,11 @@ const Hero = () => {
             className="flex items-center px-5 py-3 m-0 space-x-2 text-sm text-white rounded-lg cursor-pointer bg-secondary"
             onClick={handleDownload}
           >
-            <RiDownloadCloudFill color="#fff" className="w-5 h-5" />
             <p className="font-medium">Download the App</p>
+            <div className="flex items-center space-x-2">
+              <IoLogoGooglePlaystore   color="#fff" className="w-4 h-4" />
+            <FaApple  color="#fff" className="w-5 h-5" />
+            </div>
           </div>
           <div className="px-5 py-3 text-sm border rounded-lg cursor-pointer bg-primary-100 border-primary text-secondary">
             Explore Features

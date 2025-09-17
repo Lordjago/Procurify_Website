@@ -1,12 +1,18 @@
-import image1 from "@assets/images/what1.png";
-import image2 from "@assets/images/what2.png";
+// import image1 from "@assets/images/what1.png";
+// import image2 from "@assets/images/what2.png";
+import image1 from "@assets/images/object_payment.svg";
+import image2 from "@assets/images/object_logistics.svg";
 
 import how1 from "@assets/images/Request RMB 1.svg";
 import how2 from "@assets/images/Dashboard-Shipping Address.svg";
 import how3 from "@assets/images/Track Shipment Complete.svg";
 
-import whoitfor1 from "@assets/images/whoitfor1.svg";
-import whoitfor2 from "@assets/images/whoitfor2.svg";
+import payment1 from "@assets/images/payment1.svg";
+import payment2 from "@assets/images/payment2.svg";
+import payment3 from "@assets/images/payment3.svg";
+
+import whoitfor1 from "@assets/images/whoweserve1.svg";
+import whoitfor2 from "@assets/images/whoweserve2.svg";
 
 import review1 from "@assets/images/importer.png";
 import review2 from "@assets/images/payment.png";
@@ -18,11 +24,37 @@ import { FaLinkedin } from "react-icons/fa6";
 
 import keyfeature from "@assets/images/keyfeatures.png";
 import transparent from "@assets/images/transparent.png";
+
+import offer1 from "@assets/images/offer1.svg";
+import offer2 from "@assets/images/offer2.svg";
+import offer3 from "@assets/images/offer3.svg";
+import offer4 from "@assets/images/offer4.svg";
+
+import {
+  Ri24HoursFill,
+  Ri24HoursLine,
+  RiBookletFill,
+  RiBookmark3Fill,
+  RiCakeFill,
+  RiChatHeartFill,
+  RiExchangeFill,
+  RiExchangeFundsFill,
+  RiFlashlightFill,
+  RiGlobalFill,
+  RiInboxArchiveFill,
+  RiLightbulbFlashFill,
+  RiSecurePaymentFill,
+  RiStore3Fill,
+  RiTimerFlashFill,
+  RiTrophyFill,
+  RiWalletFill,
+} from "react-icons/ri";
 export const navLinks = [
   { id: 1, name: "Home", href: "/" },
   { id: 2, name: "About Us", href: "/about-us" },
   { id: 3, name: "FAQs", href: "/faqs" },
   { id: 4, name: "Blog", href: "/blog" },
+  { id: 5, name: "Contact Us", href: "/contact-us" },
 ];
 
 export const whatYouCando = [
@@ -47,19 +79,19 @@ export const howItWorksPayment = [
     id: 1,
     title: "Input RMB Amount",
     text: "Input how much you want to pay.",
-    image: how1,
+    image: payment1,
   },
   {
     id: 2,
     title: "Add Supplier Details",
     text: "Submit your supplier account information.",
-    image: how2,
+    image: payment2,
   },
   {
     id: 3,
     title: "Pay in Local Currency",
     text: "We convert and pay your supplier instantly and securely.",
-    image: how3,
+    image: payment3,
   },
 ];
 
@@ -335,34 +367,34 @@ export const advantages = [
   {
     title: "Local Simplicity",
     description: "Pay in Naira, Cedi, or KES. We handle the RMB—zero hassle.",
-    image: transparent,
+    icon: RiWalletFill,
   },
   {
     title: "Fast Transactions",
     description:
       "Instant proof of payment builds supplier trust and speeds delivery.",
-    image: transparent,
+    icon: RiFlashlightFill,
   },
   {
     title: "Transparent Rates",
     description: "Competitive exchange rates with no surprise deductions.",
-    image: transparent,
+    icon: RiExchangeFill,
   },
   {
     title: "Smart Reports",
     description:
       "Export your payment history to track, plan, and share with investors.",
-    image: transparent,
+    icon: RiBookletFill,
   },
   {
     title: "24/7 Support",
     description: "Real people, ready whenever you need help.",
-    image: transparent,
+    icon: Ri24HoursLine,
   },
   {
     title: "Secure & Reliable",
     description: "Every payment protected with trusted, compliant systems.",
-    image: transparent,
+    icon: RiSecurePaymentFill,
   },
 ];
 
@@ -371,30 +403,30 @@ export const whatWeOffer = [
     title: "Air Cargo",
     description:
       "Reliable shipping for orders—arrives in 5–7 days, with full insurance and easy tracking.",
-    image: transparent,
+    image: offer1,
   },
   {
     title: "Sea Cargo",
     description:
       "Affordable bulk shipping—arrives in 35–40 days, with cost-saving consolidation and simple tracking.",
-    image: transparent,
+    image: offer2,
   },
   {
     title: "Full Container Loading (FCL)",
     description:
       "Efficient end-to-end management for large shipments, fully insured and dependable.",
-    image: transparent,
+    image: offer3,
   },
   {
     title: "Special Containers",
     description:
       "Tailored solutions for refrigerated, oversized, or hazardous cargo with 24/7 support.",
-    image: transparent,
+    image: offer4,
   },
   {
     title: "Your cargo, always in the loop",
     description: "Ship, track, and relax—Procurify delivers.",
-    image: transparent,
+    image: offer1,
   },
 ];
 
@@ -404,52 +436,52 @@ export const buildForGrowth = [
     title: "All-in-One Logistics",
     description:
       "Freight, clearance, insurance, and delivery—everything handled in one platform.",
-    image: transparent,
+    icon: RiStore3Fill,
   },
   {
     id: 2,
     title: "24/7 Support",
     description: "Dedicated human support whenever you need it.",
-    image: transparent,
+    icon: Ri24HoursFill,
   },
   {
     id: 3,
     title: "Cargo Insurance",
     description: "Full coverage with 100% reimbursement in case of loss.",
-    image: transparent,
+    icon: RiBookmark3Fill,
   },
   {
     id: 4,
     title: "Logistics Reports",
     description: "Export-ready reports for smarter planning and compliance.",
-    image: transparent,
+    icon: RiBookletFill,
   },
   {
     id: 5,
     title: "Competitive Rates",
     description:
       "The best rates in the market—transparent, with zero hidden fees.",
-    image: transparent,
+    icon: RiExchangeFundsFill,
   },
   {
     id: 6,
     title: "Package Consolidation",
     description: "Combine multiple orders into one cost-efficient shipment.",
-    image: transparent,
+    icon: RiInboxArchiveFill,
   },
   {
     id: 7,
     title: "Smart Tracking",
     description:
       "Track your shipment in-app, by email, or SMS—real-time visibility every step of the way.",
-    image: transparent,
+    icon: RiTimerFlashFill,
   },
   {
     id: 8,
     title: "Fast & Reliable",
     description:
       "Optimized routes and trusted partners ensure your supply chain never slows down.",
-    image: transparent,
+    icon: RiFlashlightFill,
   },
 ];
 
@@ -458,31 +490,37 @@ export const ourValue = [
     title: "Empowerment",
     description:
       "We give you the tools and support to grow your business and compete globally.",
+    icon: RiGlobalFill,
   },
   {
     title: "Transparency",
     description:
       "No hidden surprises—everything is clear, honest, and trustworthy.",
+    icon: RiCakeFill,
   },
   {
     title: "Efficiency",
     description:
       "We streamline every step so your logistics and payments are fast, simple, and reliable.",
+    icon: RiLightbulbFlashFill,
   },
   {
     title: "Innovation",
     description:
       "We’re always finding smarter ways to make trade easier and help your business grow.",
+    icon: RiTrophyFill,
   },
   {
     title: "Integrity",
     description:
       "You can count on us—secure payments, ethical practices, and dependable partnerships.",
+    icon: RiSecurePaymentFill,
   },
   {
     title: "Collaboration",
     description:
       "We create a community where businesses like yours and suppliers succeed together.",
+    icon: RiChatHeartFill,
   },
 ];
 export const faqsPayment = [
@@ -687,5 +725,58 @@ export const widget = [
     id: 8,
     image: "",
     height: "270px",
+  },
+];
+
+export const footerLinksCompany = [
+  {
+    id: 1,
+    name: "Home",
+    href: "/",
+  },
+  {
+    id: 2,
+    name: "About Us",
+    href: "/about-us",
+  },
+  {
+    id: 3,
+    name: "FAQs",
+    href: "/faqs",
+  },
+];
+
+export const footerLinksProducts = [
+  {
+    id: 1,
+    name: "Shipping",
+    href: "/logistics",
+  },
+  {
+    id: 2,
+    name: "Logistics",
+    href: "/logistics",
+  },
+  {
+    id: 3,
+    name: "Curi",
+    href: "#",
+  },
+  {
+    id: 4,
+    name: "Loyalty Program",
+    href: "#",
+  },
+];
+export const footerLinksLegal = [
+  {
+    id: 1,
+    name: "Terms of Use",
+    href: "/terms-and-conditions",
+  },
+  {
+    id: 2,
+    name: "Privacy Policy",
+    href: "/privacy-policy",
   },
 ];

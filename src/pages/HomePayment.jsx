@@ -10,6 +10,7 @@ import heroImageMobile from "@assets/images/paymentHeroMobile.png";
 import { howItWorksPayment } from "../constant";
 import Reviews from "@features/OtherHomes/Reviews";
 import { advantages } from "../constant";
+import image from "@assets/images/finance.svg";
 
 const hero = {
   heading: ["Pay RMB to Your ", "Suppliers In Minutes."],
@@ -23,6 +24,7 @@ const transparent = {
   bgColor: "#DCDCFA",
   heading: ["Stop leaving your,", "suppliers guessing."],
   subheading: "Pay instantly! Show them you mean business.",
+  image: image,
 };
 
 const HomePayment = () => {

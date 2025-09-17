@@ -1,7 +1,8 @@
 import React from "react";
 import image from "@assets/images/Hand-phone.png";
-import { RiDownloadCloudFill } from "react-icons/ri";
 import Button from "@components/Button";
+import { FaApple } from "react-icons/fa6";
+import { IoLogoGooglePlaystore } from "react-icons/io5";
 
 const Download = () => {
   return (
@@ -16,8 +17,8 @@ const Download = () => {
             start today.
           </h4>
           <div className="mt-10 mb-2 flex flex-col items-center md:flex-row text-center space-x-4 space-y-6 gap-4">
-            <Button label={"Download the iOS"} btnIcon={RiDownloadCloudFill} style={"font-medium"} className={"border-0 m-0 flex items-center space-x-2 py-3 px-5 bg-secondary rounded-lg text-sm text-white cursor-pointer"} />
-            <Button label={"Download the Android"} btnIcon={RiDownloadCloudFill} style={"font-medium"} className={"border-0 m-0 flex items-center space-x-2 py-3 px-5 bg-secondary rounded-lg text-sm text-white cursor-pointer"} />
+              <Button label={"Download the iOS"} btnIcon={FaApple}  style={"font-medium"} className={"border-0 m-0 flex items-center space-x-2 py-3 px-5 bg-secondary rounded-lg text-sm text-white cursor-pointer"} />
+              <Button label={"Download the Android"} btnIcon={IoLogoGooglePlaystore} style={"font-medium"} className={"border-0 m-0 flex items-center space-x-2 py-3 px-5 bg-secondary rounded-lg text-sm text-white cursor-pointer"} />
           </div>
         </div>
         <div className="mx-2 md:mx-10 rounded-2xl flex items-center justify-center bg-gradient-to-t from-[#d2d2ee] via-[#d2d2ee] to-white">

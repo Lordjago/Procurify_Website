@@ -11,6 +11,7 @@ import Faqs from "@pages/Faqs";
 import Blog from "@pages/Blog";
 import GetBlogById from "@pages/GetBlogById";
 import NotFound from "@features/NotFound";
+import Contact from "@pages/Contact";
 
 const AppRoutes = () => {
   return (
@@ -26,7 +27,7 @@ const AppRoutes = () => {
         <Route path="/faqs" element={<Faqs />} />
         <Route path="/blog" element={<Blog />} />
         <Route path="/blog/:id" element={<GetBlogById />} />
-
+        <Route path="/contact-us" element={<Contact />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
     </BrowserRouter>

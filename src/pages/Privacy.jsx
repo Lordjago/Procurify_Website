@@ -26,7 +26,10 @@ const Privacy = () => {
     <div>
       <Header title={"Privacy Policy"} />
       <PageData data={pageData} date={{ availability: false, date: "" }} />
-      <Download />
+       <Download
+        title={["From China to your door stress-free.", ""]}
+        text={["Download the app and", "start shipping today."]}
+      />
       <Footer />
     </div>
   );

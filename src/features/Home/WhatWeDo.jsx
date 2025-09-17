@@ -38,7 +38,7 @@ const WhatWeDo = () => {
                 <img
                   src={feature.image}
                   alt={feature.title}
-                  className="w-full h-[280px] object-cover rounded-xl"
+                  className="w-full h-[280px] object-contain rounded-xl"
                 />
               </div>
             </div>

@@ -2,6 +2,8 @@ import React from "react";
 import { RiDownloadCloudFill, RiMenu5Fill } from "react-icons/ri";
 import Navbar from "@features/Navbar";
 import { detectOS, getAppStoreLink } from "@utils/detectOs";
+import { IoLogoGooglePlaystore } from "react-icons/io5";
+import { FaApple } from "react-icons/fa6";
 const HomePageHero = ({ heading, subheading, desktopImage, mobileImage }) => {
   const handleDownload = () => {
     const os = detectOS();
@@ -32,8 +34,11 @@ const HomePageHero = ({ heading, subheading, desktopImage, mobileImage }) => {
               className="flex items-center px-5 py-3 m-0 space-x-2 text-sm text-white rounded-lg cursor-pointer bg-secondary"
               onClick={handleDownload}
             >
-              <RiDownloadCloudFill color="#fff" className="w-5 h-5" />
               <p className="font-medium">Get the App</p>
+              <div className="flex items-center space-x-2">
+                <IoLogoGooglePlaystore color="#fff" className="w-4 h-4" />
+                <FaApple color="#fff" className="w-5 h-5" />
+              </div>
             </div>
           </div>
         </div>

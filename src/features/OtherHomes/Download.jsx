@@ -1,6 +1,8 @@
 import React from "react";
 import { RiDownloadCloudFill } from "react-icons/ri";
 import Button from "@components/Button";
+import { FaApple } from "react-icons/fa6";
+import { IoLogoGooglePlaystore } from "react-icons/io5";
 
 const Download = ({title, text}) => {
   return (
@@ -18,8 +20,8 @@ const Download = ({title, text}) => {
              {text[1]} 
           </h4>
         <div className="flex flex-col items-center justify-center gap-4 mt-5 mb-2 space-x-4 space-y-6 text-center md:flex-row">
-            <Button label={"Download the iOS"} btnIcon={RiDownloadCloudFill} style={"font-medium"} className={"border-0 m-0 flex items-center space-x-2 py-3 px-5 bg-secondary rounded-lg text-sm text-white cursor-pointer"} />
-            <Button label={"Download the Android"} btnIcon={RiDownloadCloudFill} style={"font-medium"} className={"border-0 m-0 flex items-center space-x-2 py-3 px-5 bg-secondary rounded-lg text-sm text-white cursor-pointer"} />
+             <Button label={"Download the iOS"} btnIcon={FaApple}  style={"font-medium"} className={"border-0 m-0 flex items-center space-x-2 py-3 px-5 bg-secondary rounded-lg text-sm text-white cursor-pointer"} />
+              <Button label={"Download the Android"} btnIcon={IoLogoGooglePlaystore} style={"font-medium"} className={"border-0 m-0 flex items-center space-x-2 py-3 px-5 bg-secondary rounded-lg text-sm text-white cursor-pointer"} />
           </div>
         </div>
       </div>
