@@ -60,28 +60,28 @@ const ContactForm = () => {
     }
   };
   return (
-    <div className="px-10 md:px-20 pt-1 md:pt-2">
-      <div className="my-12 grid grid-cols-1 md:grid-cols-2 space-x-10 mx-3 md:gap-4 md:mx-10">
+    <div className="px-4 md:px-20 pt-1 md:pt-2">
+      <div className="my-12 grid grid-cols-1 lg:grid-cols-2 space-x-10 space-y-10 mx-3 md:gap-4 md:mx-10">
         <div className="">
           <h1 className="font-bold text-[25px] md:text-5xl">Get in Touch – <br /> We're Here to Help!</h1>
           <p className="text-lg mt-6">
            Have questions or need assistance? Our team is always ready to guide you on your journey.
           </p>
 
-          <div className="flex items-start justify-between mt-7">
+          <div className="flex items-start flex-col md:flex-row space-y-6 justify-between mt-7">
               <div className="w-full">
-                <h3 className="font-bold text-2xl">Call Center</h3>
+                <h3 className="font-bold text-xl">Call Center</h3>
                 <p className="mt-2 text-sm text-[#fafafa">(234) 8123-45678</p>
               </div>
 
               <div className="w-full">
-                <h3 className="font-bold text-2xl">Our Location</h3>
+                <h3 className="font-bold text-xl">Our Location</h3>
                 <p className="mt-2 text-sm text-[#fafafa">Lagos, Nigeria</p>
               </div>
           </div>
-           <div className="flex items-start justify-between mt-6">
+           <div className="flex items-start flex-col md:flex-row space-y-6 justify-between mt-6">
               <div className="w-full">
-                <h3 className="font-bold text-2xl">Social Network</h3>
+                <h3 className="font-bold text-xl">Social Network</h3>
                 <div className="flex items-center space-x-2 mt-2">
                           {socialLinks.map((link) => (
                             <a href={link.href} key={link.id}>
@@ -94,7 +94,7 @@ const ContactForm = () => {
               </div>
 
               <div className="w-full">
-                <h3 className="font-bold text-2xl">Email</h3>
+                <h3 className="font-bold text-xl">Email</h3>
                 <p className="mt-2 text-sm">contact@procurify.com</p>
               </div>
           </div>

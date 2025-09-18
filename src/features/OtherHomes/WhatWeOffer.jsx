@@ -12,13 +12,13 @@ const WhatWeOffer = ({ data }) => {
         <div className="mt-10 grid grid-cols-1 lg:grid-cols-2 gap-5 mx-4 md:mx-20">
           {data.map((item, i) => (
             <div
-              className="flex items-center gap-5  p-4 md:p-8 space-y-3 bg-[#F8F8F8] rounded-2xl"
+              className="flex items-center flex-col md:flex-row gap-5  p-4 md:p-8 space-y-3 bg-[#F8F8F8] rounded-2xl"
               key={i}
             >
-              <div className="w-full">
+              <div className="w-full h-auto">
                 <img
                   src={item.image}
-                  className="w-full h-[90%] object-cover rounded-xs"
+                  className="w-full h-[168px] md:h-[234px] object-cover rounded-xs"
                 />
               </div>
               <div className="mt-2">

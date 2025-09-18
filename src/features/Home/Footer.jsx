@@ -8,12 +8,12 @@ const Footer = () => {
   return (
     <div className="bg-[#F5F5F5] py-15 px-6 md:px-30">
       <div className="grid grid-cols-1 md:grid-cols-2 mb-10 gap-8">
-        <div className="flex items-start justify-between mb-8 md:mb-0 mx-2 md:mx-8">
+        <div className="grid grid-cols-2 md:grid-cols-3 space-y-6 justify-between mb-8 md:mb-0 mx-2 md:mx-8">
           <div>
             <h5 className="text-[#686E7D] text-[16px]">Company</h5>
             <div className="flex flex-col space-y-2 mt-4">
           {footerLinksCompany.map((link) => (
-            <Link to={link.href} key={link.id} className="text-[14px] font-medium hover:underline">
+            <Link to={link.href} key={link.id} className="text-[14px] font-bold text-[#4E5663]">
               {link.name}
             </Link>
           ))}
@@ -24,7 +24,7 @@ const Footer = () => {
             <h5 className="text-[#686E7D] text-[16px]">Products</h5>
             <div className="flex flex-col space-y-2 mt-4">
           {footerLinksProducts.map((link) => (
-            <Link to={link.href} key={link.id} className="text-[14px] font-medium hover:underline">
+            <Link to={link.href} key={link.id} className="text-[14px] font-bold text-[#4E5663]">
               {link.name}
             </Link>
           ))}
@@ -36,7 +36,7 @@ const Footer = () => {
             <h5 className="text-[#686E7D] text-[16px]">Legal</h5>
             <div className="flex flex-col space-y-2 mt-4">
           {footerLinksLegal.map((link) => (
-            <Link to={link.href} key={link.id} className="text-[14px] font-medium hover:underline">
+            <Link to={link.href} key={link.id} className="text-[14px] font-bold text-[#4E5663]">
               {link.name}
             </Link>
           ))}
