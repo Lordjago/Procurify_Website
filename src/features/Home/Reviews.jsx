@@ -28,6 +28,13 @@ const Reviews = () => {
   const isFirstPage = currentIndex === 0;
   const isLastPage = currentIndex === Math.ceil(reviews.length / 2) - 1;
 
+useEffect(() => {
+  setInterval(() => {
+    setCurrentIndex((prevIndex) =>
+      prevIndex === Math.ceil(reviews.length / 2) - 1 ? 0 : prevIndex + 1
+    );
+  }, 5000);
+}, []);
   return (
     <div className="mx-4 md:mx-30 my-15 md:my-25">
       <div>

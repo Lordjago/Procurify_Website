@@ -275,22 +275,22 @@ export const socialLinks = [
   {
     id: 1,
     icon: FaXTwitter,
-    href: "/",
+    href: " https://x.com/withprocurify?s=21&t=N2fqCWy2rRGVzM08RGyqog",
   },
   {
     id: 2,
     icon: AiFillInstagram,
-    href: "/",
+    href: "https://www.instagram.com/withprocurify?igsh=MWhkbjMzc3pzNGV2Mg==",
   },
   {
     id: 3,
     icon: FaFacebook,
-    href: "/",
+    href: "https://facebook.com/Procurifyafrica/",
   },
   {
     id: 4,
     icon: FaLinkedin,
-    href: "/",
+    href: "https://www.linkedin.com/company/procurify-international-trading-ltd",
   },
 ];
 
@@ -744,13 +744,18 @@ export const footerLinksCompany = [
     name: "FAQs",
     href: "/faqs",
   },
+    {
+    id: 4,
+    name: "Contact Us",
+    href: "/contact-us",
+  },
 ];
 
 export const footerLinksProducts = [
   {
     id: 1,
-    name: "Shipping",
-    href: "/logistics",
+    name: "Payment",
+    href: "/payment",
   },
   {
     id: 2,
@@ -772,7 +777,7 @@ export const footerLinksLegal = [
   {
     id: 1,
     name: "Terms of Use",
-    href: "/terms-and-conditions",
+    href: "/terms-of-use",
   },
   {
     id: 2,

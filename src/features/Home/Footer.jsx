@@ -1,10 +1,25 @@
-import React from "react";
+import React, { useState } from "react";
 import logo from "@assets/images/procurify_logo.svg";
 import { footerLinksCompany, footerLinksLegal, footerLinksProducts, socialLinks } from "@layouts/index";
 import { Link } from "react-router-dom";
 import Button from "@components/Button";
 
 const Footer = () => {
+  const [email, setEmail] = useState("");
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    // Add subscription logic here
+    try {
+      console.log("Subscribed with email:", email);
+      
+    } catch (error) {
+      console.log(error)
+    } finally {
+      setEmail("");
+    }
+  };
+
   return (
     <div className="bg-[#F5F5F5] py-15 px-6 md:px-30">
       <div className="grid grid-cols-1 md:grid-cols-2 mb-10 gap-8">
@@ -46,14 +61,13 @@ const Footer = () => {
           
         </div>
         <div className="mx-2 md:mx-8">
-          <h4 className="font-semibold">Subscribe to our newsletter</h4>
-          <p className="text-sm mt-2">Stay updated on the latest news, exclusive offers, and exciting updates</p>
+          <h4 className="font-semibold">Subscribe to our Newsletter</h4>
+          <p className="text-sm mt-2">Be the first to know our latest updates, tips, and exclusive offers.</p>
 
-          <div className="flex items-center mt-8 space-x-2">
-            <input type="text" placeholder="Email Address" className="w-full border-1 border-gray-400 py-3 px-2 rounded-lg font-xs placeholder:font-xs" />
+          <form onSubmit={handleSubmit} className="flex items-center mt-8 space-x-2">
+            <input type="text" name="email" value={email} onChange={(e) => setEmail(e.target.value)} placeholder="Email Address" className="w-full border-1 border-gray-400 py-3 px-2 rounded-lg font-xs placeholder:font-xs" />
               <Button label={"Subscribe"} style={"font-medium"} className={"border-0 m-0 flex items-center space-x-2 py-3 px-5 bg-secondary rounded-lg text-sm text-white cursor-pointer"} />
-            
-          </div>
+            </form>
         </div>
       </div>
       <hr className="mt-12 mb-8 border-t border-gray-300" />
@@ -69,15 +83,10 @@ const Footer = () => {
           ))}
         </div>
       </div>
-      <div className="mt-8 flex flex-col md:flex-row space-y-5  items-start justify-between mr-20">
-        <p className="text-xs">
+        <p className="mt-8 text-xs">
           Powered by Procurify International Trading Limited
         </p>
-        <p className="text-xs">
-          <Link to={"/privacy-policy"}>Privacy Policy</Link> •{" "}
-          <Link to={"/terms-and-condition"}>Terms & condition</Link>
-        </p>
-      </div>
+       
     </div>
   );
 };

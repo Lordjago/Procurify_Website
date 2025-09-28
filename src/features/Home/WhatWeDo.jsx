@@ -3,18 +3,21 @@ import { whatYouCando } from "../../constant";
 import Button from "@components/Button";
 import { Link } from "react-router-dom";
 
-const WhatWeDo = () => {
+const WhatWeDo = ({handleDownload}) => {
   return (
-    <div className="mx-4 md:mx-15 my-15 md:my-25 fade-in">
+    <div className="mx-4 md:mx-15 my-15 md:my-25 fade-in" id="features">
       <div>
         <div className="flex items-end justify-between">
           <h1 className="text-2xl md:text-5xl w-full font-bold leading-8 md:leading-15 ">
            How Procurify <br /> Works For You
           </h1>
-          <Button
-            label={"Get Started Free"}
+        <div className="hidden lg:flex">
+           <Button
+            label={"Get Started Now"}
+            onClick={handleDownload}
             className="py-2.5 px-5 text-xs text-white bg-secondary rounded-lg font-normal cursor-pointer whitespace-nowrap"
           />
+        </div>
         </div>
         <div className="mt-10 grid grid-cols-1 lg:grid-cols-2 gap-4 space-y-3">
           {whatYouCando.map((feature) => (

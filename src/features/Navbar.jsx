@@ -5,7 +5,7 @@ import { navLinks } from "../constant";
 import { IoCloseOutline } from "react-icons/io5";
 import { Link, useLocation } from "react-router-dom";
 import { changeString } from "@utils/changeString";
-const HomePageHero = ({ home, children }) => {
+const HomePageHero = ({ home, children, handleDownload }) => {
   const [active, setActive] = useState("home");
   const [toggle, setToggle] = useState(false);
 
@@ -47,8 +47,11 @@ const HomePageHero = ({ home, children }) => {
             </li>
           ))}
         </ul>
-        <div className="hidden md:flex py-2.5 px-6 text-xs text-white bg-secondary rounded-lg font-normal cursor-pointer">
-          Get Started
+        <div
+          className="hidden md:flex py-2.5 px-6 text-xs text-white bg-secondary rounded-lg font-normal cursor-pointer"
+          onClick={handleDownload}
+        >
+          Get Started Now
         </div>
         <div className="flex md:hidden ">
           <RiMenu5Fill

@@ -7,13 +7,27 @@ import Reviews from "@features/Home/Reviews";
 import Download from "@features/Home/Download";
 import Footer from "@features/Home/Footer";
 import Hero from "@features/Home/Hero";
+import { detectOS, getAppStoreLink } from "@utils/detectOs";
 
 const Home = () => {
+   const handleDownload = () => {
+    const os = detectOS();
+
+    if (os === "other") {
+      const downloadSection = document.getElementById("download-options");
+      if (downloadSection) {
+        downloadSection.scrollIntoView({ behavior: "smooth" });
+      }
+    } else {
+      const link = getAppStoreLink(os);
+      window.open(link, "_blank");
+    }
+  };
   return (
     <>
-      <Hero />
-      <WhatWeDo />
-      <HowItWorks />
+      <Hero handleDownload={handleDownload} />
+      <WhatWeDo handleDownload={handleDownload} />
+      <HowItWorks handleDownload={handleDownload} />
       <WhoItsFor />
       <WhyChoose />
       <Reviews />

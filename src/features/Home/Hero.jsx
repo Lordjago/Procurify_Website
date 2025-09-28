@@ -2,27 +2,19 @@ import React from "react";
 import heroImage from "@assets/images/hh.png";
 import heroImageMobile from "@assets/images/hero-mobile.png";
 import Navbar from "../Navbar";
-import { detectOS, getAppStoreLink } from "@utils/detectOs";
 import { FaApple } from "react-icons/fa6";
 import { IoLogoGooglePlaystore } from "react-icons/io5";
 
-const Hero = () => {
-  const handleDownload = () => {
-    const os = detectOS();
+const Hero = ({handleDownload}) => {
 
-    if (os === "other") {
-      const downloadSection = document.getElementById("download-options");
-      if (downloadSection) {
-        downloadSection.scrollIntoView({ behavior: "smooth" });
-      }
-    } else {
-      const link = getAppStoreLink(os);
-      window.open(link, "_blank");
+  const handleExploreFeatures = () => {
+    const featuresSection = document.getElementById("features");
+    if (featuresSection) {
+      featuresSection.scrollIntoView({ behavior: "smooth" });
     }
   };
-
   return (
-    <Navbar home={true}>
+    <Navbar home={true} handleDownload={handleDownload}>
       <div className="flex flex-col items-center mx-4 md:mx-15 mt-15">
         <h1 className="text-3xl md:text-6xl text-center font-bold leading-10 md:leading-18 mb-4 font-['Inter']">
           The Trusted Bridge <br /> for African Importers
@@ -38,11 +30,14 @@ const Hero = () => {
           >
             <p className="font-medium">Download the App</p>
             <div className="flex items-center space-x-2">
-              <IoLogoGooglePlaystore   color="#fff" className="w-4 h-4" />
-            <FaApple  color="#fff" className="w-5 h-5" />
+              <IoLogoGooglePlaystore color="#fff" className="w-4 h-4" />
+              <FaApple color="#fff" className="w-5 h-5" />
             </div>
           </div>
-          <div className="px-5 py-3 text-sm border rounded-lg cursor-pointer bg-primary-100 border-primary text-secondary">
+          <div
+            className="px-5 py-3 text-sm border rounded-lg cursor-pointer bg-primary-100 border-primary text-secondary"
+            onClick={handleExploreFeatures}
+          >
             Explore Features
           </div>
         </div>

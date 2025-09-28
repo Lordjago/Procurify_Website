@@ -27,7 +27,8 @@ const ContactForm = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    setIsLoading(true)
+    // setIsLoading(true)
+    console.log(contactData)
     if (!validValues) {
       // toast.error("Please fill in all fields.");
       return;
@@ -61,8 +62,8 @@ const ContactForm = () => {
   };
   return (
     <div className="px-4 md:px-20 pt-1 md:pt-2">
-      <div className="my-12 grid grid-cols-1 lg:grid-cols-2 space-x-10 space-y-10 mx-3 md:gap-4 md:mx-10">
-        <div className="">
+      <div className="my-12 grid grid-cols-1 lg:grid-cols-2 space-x-10 space-y-10 mx-3 gap-8 md:gap-4 md:mx-10">
+        <div className="order-2 md:order-1">
           <h1 className="font-bold text-[25px] md:text-5xl">Get in Touch – <br /> We're Here to Help!</h1>
           <p className="text-lg mt-6">
            Have questions or need assistance? Our team is always ready to guide you on your journey.
@@ -76,7 +77,7 @@ const ContactForm = () => {
 
               <div className="w-full">
                 <h3 className="font-bold text-xl">Our Location</h3>
-                <p className="mt-2 text-sm text-[#fafafa">Lagos, Nigeria</p>
+                <p className="mt-2 text-sm text-[#fafafa">C1548, 4th Floor, No. 190 Xianlie East Road, Dahe District, Guangzhou</p>
               </div>
           </div>
            <div className="flex items-start flex-col md:flex-row space-y-6 justify-between mt-6">
@@ -95,11 +96,11 @@ const ContactForm = () => {
 
               <div className="w-full">
                 <h3 className="font-bold text-xl">Email</h3>
-                <p className="mt-2 text-sm">contact@procurify.com</p>
+                <p className="mt-2 text-sm">support@procurify.com</p>
               </div>
           </div>
         </div>
-        <div>
+        <div className="order-1 md:order-2">
             <h1 className="text-2xl font-bold">Send Us a Message</h1>
             <form onSubmit={handleSubmit} className="mt-5">
             <Input

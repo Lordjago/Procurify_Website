@@ -6,7 +6,7 @@ import {
 } from "../../constant";
 import NavOptions from "@features/NavOptions";
 
-const HowItWorks = () => {
+const HowItWorks = ({handleDownload}) => {
   const [selectedNav, setSelectedNav] = useState(navOptions[0]);
   const howItWorks =
     selectedNav.id === 1 ? howItWorksPayment : howItWorksLogistics;
@@ -43,8 +43,8 @@ const HowItWorks = () => {
               Trade Simplified - In 3 Clicks
             </h1>
           )}
-          <div className="hidden lg:flex py-2.5 px-5 text-xs text-white bg-secondary rounded-lg font-normal cursor-pointer whitespace-nowrap">
-            Get Started Free
+          <div className="hidden lg:flex py-2.5 px-5 text-xs text-white bg-secondary rounded-lg font-normal cursor-pointer whitespace-nowrap" onClick={handleDownload}>
+            Get Started Now
           </div>
         </div>
         <NavOptions

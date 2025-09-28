@@ -10,7 +10,7 @@ const Hero = () => {
             Reliable Support <br /> Anytime You Need
           </h1>
           <p className="text-sm w-full md:w-1/2 md:text-[16px] mt-4">
-            All the best tips, stories, and resources — straight to your email
+           Need help? We're here anytime to provide the support you need.
           </p>
         </div>
       </div>
