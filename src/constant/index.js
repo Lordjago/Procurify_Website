@@ -30,6 +30,11 @@ import offer2 from "@assets/images/offer2.svg";
 import offer3 from "@assets/images/offer3.svg";
 import offer4 from "@assets/images/offer4.svg";
 
+import ceo from "@assets/images/ceo.jpg"
+import operation from "@assets/images/operation.jpg"
+import customer from "@assets/images/customer.jpg"
+import designer from "@assets/images/designer.jpg"
+
 import {
   Ri24HoursFill,
   Ri24HoursLine,
@@ -49,6 +54,33 @@ import {
   RiTrophyFill,
   RiWalletFill,
 } from "react-icons/ri";
+
+export const ourTeam = [
+  {
+    id:1, 
+    name: "Keefa Umar",
+    role: "Chief Executive Officer",
+    image: ceo
+  },
+    {
+    id:2, 
+    name: "Zhang Ciyun",
+    role: "Chief Operation Officer",
+    image: operation
+  },
+    {
+    id:3, 
+    name: "Muneeroh Abdulrahom",
+    role: "Customer Success Officer",
+    image: customer
+  },
+    {
+    id:4, 
+    name: "Shuaib Abdulbaki",
+    role: "Product Designer",
+    image: designer
+  },
+]
 export const navLinks = [
   { id: 1, name: "Home", href: "/" },
   { id: 2, name: "About Us", href: "/about-us" },

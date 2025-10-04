@@ -2,15 +2,16 @@ import Button from "@components/Button";
 import Input from "@components/Input";
 import { socialLinks } from "@layouts/index";
 import React, { useState } from "react";
+import { ToastContainer, toast } from 'react-toastify';
 
 const ContactForm = () => {
    const ContactFormState = {
-    fullName: "",
+    name: "",
     email: "",
     subject: "",
     message: "",
   };
-  const { isLoading, setIsLoading } = useState(false);
+  const [isLoading, setIsLoading] = useState(false);
   const [contactData, setContactData] = useState(ContactFormState);
 
   const validValues = Object.values(contactData).every((el) => el);
@@ -27,41 +28,49 @@ const ContactForm = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    // setIsLoading(true)
-    console.log(contactData)
+    setIsLoading(true)
+    // console.log(contactData)
     if (!validValues) {
-      // toast.error("Please fill in all fields.");
+      toast.error("Please fill in all fields.");
       return;
     }
 
     if (!isEmail) {
-      // toast.error("Enter a valid email address. Please check and try again.");
+      toast.error("Enter a valid email address. Please check and try again.");
       return;
     }
     if (contactData.message.length < 6) {
-      // toast.error("Message length should be > 6");
+      toast.error("Message length should be > 6");
       return;
     }
 
-    // const loginDetails = {
-    //   email: loginData.email,
-    //   password: loginData.password,
-    // };
 
     try {
-      // await dispatchEvent(sendLoginData(loginDetails, role));
-
-      // Navigate to the appropriate dashboard
-      // navigate(
-      //   role === "admin" ? "/admin/dashboard" : `/${role.toLowerCase()}/home`
-      // );
+      const res = await fetch('https://api.withprocurify.com/v1/contact-us', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(contactData),
+      });
+      console.log(res)
+      if (!res.ok) {
+        throw new Error('Failed to send message');
+      }
+      
+      toast.success("Message sent successfully.");
+      setContactData(ContactFormState);
+      // navigate("/");
     } catch (err) {
-      console.log(err)
-      // toast.error(error || err.message || "An unexpected error occurred.");
+      // console.log(err)
+      toast.error(err || err.message || "An unexpected error occurred.");
+    } finally {
+      setIsLoading(false);
     }
   };
   return (
     <div className="px-4 md:px-20 pt-1 md:pt-2">
+      <ToastContainer />
       <div className="my-12 grid grid-cols-1 lg:grid-cols-2 space-x-10 space-y-10 mx-3 gap-8 md:gap-4 md:mx-10">
         <div className="order-2 md:order-1">
           <h1 className="font-bold text-[25px] md:text-5xl">Get in Touch – <br /> We're Here to Help!</h1>
@@ -107,8 +116,8 @@ const ContactForm = () => {
               type="text"
               label="Full Name"
               placeholder="John Doe"
-              name="fullName"
-              value={contactData.fullName}
+              name="name"
+              value={contactData.name}
               onChange={handleOnChange}
             />
             <Input
@@ -137,7 +146,7 @@ const ContactForm = () => {
             />
            
             <Button
-              label={isLoading ? "Sending..." : "Send Message"}
+              label={isLoading ? "Sending Messages..." : "Send Message"}
               isLoading={isLoading}
               className="w-full flex justify-center p-5 text-sm text-white rounded-lg cursor-pointer bg-secondary"
               disabled={!validValues || !isEmail}
