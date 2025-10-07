@@ -1,5 +1,4 @@
 import React from "react";
-import image from "@assets/images/transparent.png";
 import { ourTeam } from "@layouts/index";
 
 const Team = () => {
@@ -22,7 +21,7 @@ const Team = () => {
                 />
                 <div className="flex flex-col mt-2 space-y-1">
                   <h4 className="font-bold">{member.name}</h4>
-                  <p className="text-sm font-light text-[#b7b7b7]">
+                  <p className="text-sm font-light text-[#b7b7b7] text-center">
                     {member.role}
                   </p>
                 </div>

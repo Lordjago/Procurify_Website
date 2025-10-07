@@ -30,11 +30,11 @@ import offer2 from "@assets/images/offer2.svg";
 import offer3 from "@assets/images/offer3.svg";
 import offer4 from "@assets/images/offer4.svg";
 
-import ceo from "@assets/images/ceo.jpg"
-import operation from "@assets/images/operation.jpg"
-import customer from "@assets/images/customer.jpg"
-import designer from "@assets/images/designer.jpg"
-
+import ceo from "@assets/images/team/ceo.jpg"
+import operation from "@assets/images/team/operation.jpg"
+import customer from "@assets/images/team/customer.jpg"
+import designer from "@assets/images/team/designer.jpg"
+import developer from "@assets/images/team/frontend.jpg"
 import {
   Ri24HoursFill,
   Ri24HoursLine,
@@ -79,6 +79,12 @@ export const ourTeam = [
     name: "Shuaib Abdulbaki",
     role: "Product Designer",
     image: designer
+  },
+   {
+    id:4, 
+    name: "Abdul-Azeez Adegoke ",
+    role: "Full Stack Developer",
+    image: developer
   },
 ]
 export const navLinks = [
@@ -717,45 +723,68 @@ export const faqsSupport = [
   },
 ];
 
+import desktopFrame1 from "@assets/images/gallery/frame 1.svg";
+import desktopFrame2 from "@assets/images/gallery/frame 2.svg";
+import desktopFrame3 from "@assets/images/gallery/frame 3.svg";
+import desktopFrame4 from "@assets/images/gallery/frame 4..svg";
+import desktopFrame5 from "@assets/images/gallery/frame 5..svg";
+import desktopFrame6 from "@assets/images/gallery/frame 6..svg";
+import desktopFrame7 from "@assets/images/gallery/frame 7..svg";
+import desktopFrame8 from "@assets/images/gallery/frame 8..svg";
+
+import mobileFrame1 from "@assets/images/gallery/mobile1.svg";
+import mobileFrame2 from "@assets/images/gallery/mobile2.svg";
+import mobileFrame3 from "@assets/images/gallery/mobile3.svg";
+import mobileFrame4 from "@assets/images/gallery/mobile4.svg";
+import mobileFrame5 from "@assets/images/gallery/mobile5.svg";
+import mobileFrame6 from "@assets/images/gallery/mobile6.svg";
 export const widget = [
   {
     id: 1,
-    image: "",
+    desktop: desktopFrame1,
+    mobile: mobileFrame1,
     height: "250px",
   },
   {
     id: 2,
-    image: "",
+    desktop: desktopFrame2,
+    mobile: mobileFrame2,
     height: "250px",
   },
   {
     id: 3,
-    image: "",
+    desktop: desktopFrame3,
+    mobile: mobileFrame3,
     height: "516px",
   },
   {
     id: 4,
-    image: "",
+    desktop: desktopFrame4,
+    mobile: mobileFrame4,
     height: "516px",
   },
   {
     id: 5,
-    image: "",
+    desktop: desktopFrame5,
+    mobile: mobileFrame5,
     height: "300px",
   },
   {
     id: 6,
-    image: "",
+    desktop: desktopFrame6,
+    mobile: mobileFrame6,
     height: "200px",
   },
   {
     id: 7,
-    image: "",
+    desktop: desktopFrame7,
+    mobile: "mobileFrame7",
     height: "230px",
   },
   {
     id: 8,
-    image: "",
+    desktop: desktopFrame8,
+    mobile: "mobileFrame8",
     height: "270px",
   },
 ];

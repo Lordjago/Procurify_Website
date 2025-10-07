@@ -6,30 +6,46 @@ const Widget = ({ widget }) => {
       {/* Mobile View (columns-1 for stacking, flex for side-by-side) */}
       <div className="flex flex-wrap gap-4 md:hidden">
         {widget.slice(0, 6).map((w) => (
-          <div 
-            key={w.id} 
+          <div
+            key={w.id}
             className={`${w.height !== "516px" ? "w-[47%]" : "w-full"}`}
           >
             <div
-              className="bg-[#d9d9d9] rounded-xl h-40" 
+              className={`${
+                w.height === "516px" ? "h-50" : "h-40"
+              }`}
               style={{ transition: "all 0.3s ease" }}
-            ></div>
+            >
+              <img
+                src={w.mobile}
+                alt="image"
+                className="h-full w-full object-cover rounded-xl"
+              />
+            </div>
           </div>
         ))}
       </div>
 
       {/* Desktop View (masonry layout) */}
       <div className="hidden gap-4 md:block columns-2 sm:columns-2 md:columns-3 lg:columns-5">
-        {widget.map((w) => (
+        {widget.map((w, index) => (
           <div key={w.id} className="mb-4 break-inside-avoid">
+            {/*
+        This inner div sets the desired size based on w.height and w.width
+      */}
             <div
-              className="bg-[#d9d9d9] rounded-xl"
               style={{
                 height: w?.height,
                 width: w?.width || "100%",
                 transition: "all 0.3s ease",
               }}
-            ></div>
+            >
+              <img
+                src={w.desktop}
+                alt="image"
+                className="h-full w-full object-cover  rounded-xl"
+              />
+            </div>
           </div>
         ))}
       </div>
