@@ -105,7 +105,7 @@ const ContactForm = () => {
 
               <div className="w-full">
                 <h3 className="font-bold text-xl">Email</h3>
-                <p className="mt-2 text-sm">support@procurify.com</p>
+                <p className="mt-2 text-sm">support@withprocurify.com</p>
               </div>
           </div>
         </div>
@@ -115,7 +115,7 @@ const ContactForm = () => {
             <Input
               type="text"
               label="Full Name"
-              placeholder="John Doe"
+              placeholder="Full Name"
               name="name"
               value={contactData.name}
               onChange={handleOnChange}
