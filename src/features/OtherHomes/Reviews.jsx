@@ -77,11 +77,11 @@ const Reviews = ({ title, reviews }) => {
               <p className="text-sm text-[#b7b7b7]">{review.review}</p>
               <div className="mt-6 flex items-center justify-between">
                 <div className="flex items-center space-x-3">
-                  <img
+                  {/* <img
                     src={review.image}
                     alt={review.name}
                     className="w-14 h-14 rounded-xl object-cover"
-                  />
+                  /> */}
                   <div className="flex flex-col space-y-1">
                     <h4 className="font-bold">{review.name}</h4>
                     <p className="text-sm font-light text-[#b7b7b7]">
