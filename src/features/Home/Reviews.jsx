@@ -97,7 +97,7 @@ useEffect(() => {
                     </p>
                   </div>
                 </div>
-                <Rating rating={review.rating} />
+                {/* <Rating rating={review.rating} /> */}
               </div>
             </div>
           ))}

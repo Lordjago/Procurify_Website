@@ -81,7 +81,7 @@ const ContactForm = () => {
           <div className="flex items-start flex-col md:flex-row space-y-6 justify-between mt-7">
               <div className="w-full">
                 <h3 className="font-bold text-xl">Call Center</h3>
-                <p className="mt-2 text-sm text-[#fafafa">(234) 8123-45678</p>
+                {/* <p className="mt-2 text-sm text-[#fafafa">(234) 8123-45678</p> */}
               </div>
 
               <div className="w-full">
