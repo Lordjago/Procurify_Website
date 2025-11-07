@@ -1,5 +1,5 @@
 import Rating from "@components/Rating";
-import { reviews } from "../../constant";
+import { GeneralLandingPage } from "../../constant";
 import React, { useEffect, useState } from "react";
 import { IoArrowForward } from "react-icons/io5";
 import { IoArrowBackSharp } from "react-icons/io5";
@@ -10,11 +10,11 @@ const Reviews = () => {
   useEffect(() => {
     // Show two reviews at a time
     const startIndex = currentIndex * 2;
-    setVisibleReviews(reviews.slice(startIndex, startIndex + 2));
+    setVisibleReviews(GeneralLandingPage.slice(startIndex, startIndex + 2));
   }, [currentIndex]);
 
   const nextReviews = () => {
-    if (currentIndex < Math.ceil(reviews.length / 2) - 1) {
+    if (currentIndex < Math.ceil(GeneralLandingPage.length / 2) - 1) {
       setCurrentIndex(currentIndex + 1);
     }
   };
@@ -26,12 +26,12 @@ const Reviews = () => {
   };
 
   const isFirstPage = currentIndex === 0;
-  const isLastPage = currentIndex === Math.ceil(reviews.length / 2) - 1;
+  const isLastPage = currentIndex === Math.ceil(GeneralLandingPage.length / 2) - 1;
 
 useEffect(() => {
   setInterval(() => {
     setCurrentIndex((prevIndex) =>
-      prevIndex === Math.ceil(reviews.length / 2) - 1 ? 0 : prevIndex + 1
+      prevIndex === Math.ceil(GeneralLandingPage.length / 2) - 1 ? 0 : prevIndex + 1
     );
   }, 5000);
 }, []);
@@ -103,7 +103,7 @@ useEffect(() => {
           ))}
         </div>
         <div className="flex justify-center mt-6 space-x-2">
-          {Array.from({ length: Math.ceil(reviews.length / 2) }).map(
+          {Array.from({ length: Math.ceil(GeneralLandingPage.length / 2) }).map(
             (_, index) => (
               <button
                 key={index}

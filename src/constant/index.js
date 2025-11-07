@@ -91,7 +91,7 @@ export const navLinks = [
   { id: 1, name: "Home", href: "/" },
   { id: 2, name: "About Us", href: "/about-us" },
   { id: 3, name: "FAQs", href: "/faqs" },
-  { id: 4, name: "Blog", href: "/blog" },
+  // { id: 4, name: "Blog", href: "/blog" },
   { id: 5, name: "Contact Us", href: "/contact-us" },
 ];
 
@@ -252,60 +252,163 @@ export const whyChoose = [
   },
 ];
 
-export const reviews = [
+// export const reviews = [
+//   {
+//     id: 1,
+//     name: "Abdulbaki Shuaib",
+//     position: "CEO, company",
+//     review:
+//       "After using various shipping services, I can confidently say that Procurify is unparalleled in its efficiency and user-friendly interface. I highly recommend it!",
+//     rating: 3.5,
+//     image: review1,
+//   },
+//   {
+//     id: 2,
+//     name: "Abdulbaki Shuaib",
+//     position: "CMO, company",
+//     review:
+//       "As a freelancer, I appreciate how Procurify simplifies transactions by allowing payments in RMB. It streamlines my workflow and makes managing finances much easier.",
+//     rating: 3.5,
+//     image: review2,
+//   },
+//   {
+//     id: 3,
+//     name: "Chinwe Okonkwo",
+//     position: "Logistics Manager, TradeWorks Ltd",
+//     review:
+//       "The real-time tracking and customs clearance support have reduced our shipping delays by 40%. Procurify has transformed our supply chain operations.",
+//     rating: 4.5,
+//     image: review1,
+//   },
+//   {
+//     id: 4,
+//     name: "Fatima Ndiaye",
+//     position: "E-commerce Business Owner",
+//     review:
+//       "Package consolidation has cut my shipping costs in half. The transparency and 24/7 support make international trade accessible for small businesses like mine.",
+//     rating: 4.0,
+//     image: review2,
+//   },
+//   {
+//     id: 5,
+//     name: "Kwame Adetola",
+//     position: "Import Director, RetailChain NG",
+//     review:
+//       "The competitive exchange rates and secure payment system have saved us thousands in transaction fees. Procurify is a game-changer for African businesses trading with China.",
+//     rating: 5.0,
+//     image: review1,
+//   },
+//   {
+//     id: 6,
+//     name: "Amina Mohamed",
+//     position: "Supply Chain Consultant",
+//     review:
+//       "The detailed logistics reports and cargo insurance give me peace of mind. I've recommended Procurify to all my clients looking for reliable China-Africa trade solutions.",
+//     rating: 4.5,
+//     image: review2,
+//   },
+// ];
+export const GeneralLandingPage = [
   {
     id: 1,
-    name: "Abdulbaki Shuaib",
-    position: "CEO, company",
+    name: "Adewale Ojo",
+    position: "Interior Designer",
     review:
-      "After using various shipping services, I can confidently say that Procurify is unparalleled in its efficiency and user-friendly interface. I highly recommend it!",
-    rating: 3.5,
+      "This is a great initiative. We’ve been paying and shipping for our interiors through procurify.",
+    rating: 5,
     image: review1,
   },
   {
     id: 2,
-    name: "Abdulbaki Shuaib",
-    position: "CMO, company",
-    review:
-      "As a freelancer, I appreciate how Procurify simplifies transactions by allowing payments in RMB. It streamlines my workflow and makes managing finances much easier.",
-    rating: 3.5,
+    name: "Rodiat Raji",
+    position: "Printing Materials owner",
+    review: "The platform is truly a blessing. Helping us saving time and money.",
+    rating: 5,
     image: review2,
   },
   {
     id: 3,
-    name: "Chinwe Okonkwo",
-    position: "Logistics Manager, TradeWorks Ltd",
+    name: "Aminat Wahab",
+    position: "Clothing and Accessories seller",
     review:
-      "The real-time tracking and customs clearance support have reduced our shipping delays by 40%. Procurify has transformed our supply chain operations.",
-    rating: 4.5,
+      "It's not just the services; it's the connection. Every interaction feels personal, like a conversation with the team. Something you can't find anywhere else.",
+    rating: 5,
     image: review1,
   },
   {
     id: 4,
-    name: "Fatima Ndiaye",
-    position: "E-commerce Business Owner",
-    review:
-      "Package consolidation has cut my shipping costs in half. The transparency and 24/7 support make international trade accessible for small businesses like mine.",
-    rating: 4.0,
+    name: "Fola",
+    position: "Phone Accessories",
+    review: "I don't know how they handled the logistics...but that was fast. It just works.",
+    rating: 5,
     image: review2,
   },
+];
+
+export const PaymentLandingPage = [
   {
-    id: 5,
-    name: "Kwame Adetola",
-    position: "Import Director, RetailChain NG",
-    review:
-      "The competitive exchange rates and secure payment system have saved us thousands in transaction fees. Procurify is a game-changer for African businesses trading with China.",
-    rating: 5.0,
+    id: 1,
+    name: "Rodiat Raji",
+    position: "Printing Materials owner",
+    review: "The platform is truly a blessing. Helping us saving time and money.",
+    rating: 5,
     image: review1,
   },
   {
-    id: 6,
-    name: "Amina Mohamed",
-    position: "Supply Chain Consultant",
+    id: 2,
+    name: "Michael T.",
+    position: "Electronics Trader",
     review:
-      "The detailed logistics reports and cargo insurance give me peace of mind. I've recommended Procurify to all my clients looking for reliable China-Africa trade solutions.",
-    rating: 4.5,
+      "What I love most is the peace of mind. I can pay my supplier in RMB from Nigeria without worrying if the money will have a problem. Procurify made that fear disappear.",
+    rating: 5,
     image: review2,
+  },
+  {
+    id: 3,
+    name: "Efe E.",
+    position: "Furniture Importer",
+    review:
+      "It’s not just about the payment; it’s the relationship. Every time I reach out, the team responds like family. You can’t find that kind of service anywhere else.",
+    rating: 5,
+    image: review1,
+  },
+  {
+    id: 4,
+    name: "Sarah L.",
+    position: "Fashion Merchant (Accra)",
+    review:
+      "I’ve been in importation for 7 years and never seen anything this trusted and seamless.",
+    rating: 5,
+    image: review2,
+  },
+];
+
+export const LogisticsLandingPage = [
+  {
+    id: 1,
+    name: "Fola",
+    position: "Phone Accessories",
+    review: "I don't know how they handled the logistics...but that was fast. It just works.",
+    rating: 5,
+    image: review1,
+  },
+  {
+    id: 2,
+    name: "Joy C.",
+    position: "Beauty Product",
+    review:
+      "The difference is in how they communicate. You can tell they understand what importers go through.",
+    rating: 5,
+    image: review2,
+  },
+  {
+    id: 3,
+    name: "Godwin E.",
+    position: "Auto Spare Parts Dealer",
+    review:
+      "I think it's about how secure I feel using Procurify shipment. My shipment always arrives early and intact. I’m not changing them for anything.",
+    rating: 5,
+    image: review1,
   },
 ];
 

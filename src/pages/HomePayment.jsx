@@ -7,7 +7,7 @@ import WhyChoose from "@features/OtherHomes/WhyChoose";
 import React from "react";
 import heroImage from "@assets/images/paymentHero.png";
 import heroImageMobile from "@assets/images/paymentHeroMobile.png";
-import { howItWorksPayment } from "../constant";
+import { howItWorksPayment, PaymentLandingPage } from "../constant";
 import Reviews from "@features/OtherHomes/Reviews";
 import { advantages } from "../constant";
 import image from "@assets/images/finance.svg";
@@ -37,7 +37,7 @@ const HomePayment = () => {
       />
       <Transparent {...transparent} />
       <WhyChoose title={"The Procurify Payment Advantage"} data={advantages} />
-      <Reviews title={"Trusted by Businesses Like Yours"} />
+      <Reviews title={"Trusted by Businesses Like Yours"} reviews={PaymentLandingPage} />
       <Download
         title={["Ready to pay your suppliers in minutes,", "not in mysteries?"]}
         text={["Download the app today", " and get started."]}

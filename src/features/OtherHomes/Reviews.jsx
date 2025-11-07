@@ -1,9 +1,8 @@
 import Rating from "@components/Rating";
-import { reviews } from "../../constant";
 import React, { useEffect, useState } from "react";
 import { IoArrowForward } from "react-icons/io5";
 import { IoArrowBackSharp } from "react-icons/io5";
-const Reviews = ({ title }) => {
+const Reviews = ({ title, reviews }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [visibleReviews, setVisibleReviews] = useState([]);
 
