@@ -100,9 +100,8 @@ const ContactForm = () => {
                               </div>
                             </a>
                           ))}
-                        </div>
+                </div>
               </div>
-
               <div className="w-full">
                 <h3 className="font-bold text-xl">Email</h3>
                 <p className="mt-2 text-sm">support@withprocurify.com</p>
