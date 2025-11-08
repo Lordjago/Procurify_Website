@@ -93,13 +93,13 @@ const ContactForm = () => {
               <div className="w-full">
                 <h3 className="font-bold text-xl">Social Network</h3>
                 <div className="flex items-center space-x-2 mt-2">
-                          {socialLinks.map((link) => (
+                      git {socialLinks.map((link) => (
                             <a href={link.href} key={link.id}>
                               <div className="border border-[#e0e0e0] p-2 rounded-full">
                                 {<link.icon size={20} />}
                               </div>
                             </a>
-                          ))}
+                      ))}
                 </div>
               </div>
               <div className="w-full">
