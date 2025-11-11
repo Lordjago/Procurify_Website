@@ -35,6 +35,8 @@ import operation from "@assets/images/team/operation.jpg"
 import customer from "@assets/images/team/customer.jpg"
 import designer from "@assets/images/team/designer.jpg"
 import developer from "@assets/images/team/frontend.jpg"
+import mdeveloper from "@assets/images/team/mdeveloper.png"
+
 import {
   Ri24HoursFill,
   Ri24HoursLine,
@@ -86,6 +88,12 @@ export const ourTeam = [
     role: "Full Stack Developer",
     image: developer
   },
+  {
+    id:5, 
+    name: "Ayodeji Emmanuel ",
+    role: "Mobile Developer",
+    image: mdeveloper
+  }
 ]
 export const navLinks = [
   { id: 1, name: "Home", href: "/" },
